@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -24,19 +24,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="blackbg2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fL7-U0-6PN">
-                                <frame key="frameInset" width="375" height="667"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="favicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jhn-Xi-eSs">
-                                <frame key="frameInset" minX="44" minY="186" width="287" height="239"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackbg2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fL7-U0-6PN"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jhn-Xi-eSs">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="287" id="75A-y3-cm5"/>
-                                    <constraint firstAttribute="height" constant="239" id="Vmu-Bs-Fy3"/>
+                                    <constraint firstAttribute="height" constant="247" id="Vmu-Bs-Fy3"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TinoHacks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQL-Fr-YnS">
-                                <frame key="frameInset" minX="16" minY="400" width="343" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TinoHacks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQL-Fr-YnS">
                                 <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="49"/>
                                 <color key="textColor" red="0.95094710339671729" green="0.99261881549532871" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -45,13 +40,18 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fL7-U0-6PN" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="9cv-xj-CAw"/>
+                            <constraint firstItem="hQL-Fr-YnS" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="380" id="FYr-xh-nXS"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="hQL-Fr-YnS" secondAttribute="bottom" constant="187" id="Pvt-Yo-Ys4"/>
+                            <constraint firstItem="hQL-Fr-YnS" firstAttribute="centerX" secondItem="jhn-Xi-eSs" secondAttribute="centerX" id="Qp4-cX-NN7"/>
                             <constraint firstItem="jhn-Xi-eSs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ROB-ar-Te7"/>
-                            <constraint firstItem="fL7-U0-6PN" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="S0v-U7-nXW"/>
-                            <constraint firstItem="jhn-Xi-eSs" firstAttribute="width" secondItem="fL7-U0-6PN" secondAttribute="width" id="Zs3-9J-8cA"/>
+                            <constraint firstItem="fL7-U0-6PN" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-16" id="S0v-U7-nXW"/>
+                            <constraint firstItem="jhn-Xi-eSs" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="158" id="Ylt-Kw-EEH"/>
+                            <constraint firstItem="jhn-Xi-eSs" firstAttribute="width" secondItem="fL7-U0-6PN" secondAttribute="width" constant="-88" id="Zs3-9J-8cA"/>
                             <constraint firstItem="jhn-Xi-eSs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cWk-DY-Qbq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fL7-U0-6PN" secondAttribute="trailing" id="eTU-pw-f5K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fL7-U0-6PN" secondAttribute="trailing" constant="-16" id="eTU-pw-f5K"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="fL7-U0-6PN" secondAttribute="bottom" id="ogh-K9-SuU"/>
-                            <constraint firstItem="jhn-Xi-eSs" firstAttribute="width" secondItem="fL7-U0-6PN" secondAttribute="width" id="zhE-lO-uKb"/>
+                            <constraint firstItem="hQL-Fr-YnS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="v5l-0r-ANp"/>
+                            <constraint firstItem="jhn-Xi-eSs" firstAttribute="width" secondItem="fL7-U0-6PN" secondAttribute="width" constant="-88" id="zhE-lO-uKb"/>
                         </constraints>
                     </view>
                 </viewController>
