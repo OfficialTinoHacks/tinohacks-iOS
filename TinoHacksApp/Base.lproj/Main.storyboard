@@ -1,68 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Schedule-->
-        <scene sceneID="hNz-n2-bh7">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
-                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Schedule" image="first" id="acW-dT-cKf"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="8.8000000000000007" y="-618.44077961019491"/>
-        </scene>
-        <!--Location-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Location" image="second" id="cPa-gy-q4n"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="9" y="810"/>
-        </scene>
         <!--Rules-->
         <scene sceneID="pQ8-Zy-1PP">
             <objects>
@@ -72,39 +21,122 @@
                         <viewControllerLayoutGuide type="bottom" id="AEu-df-zr4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hdt-2u-jtl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rules" image="first" id="if0-P5-onE"/>
+                    <tabBarItem key="tabBarItem" title="Rules" image="List-50" id="if0-P5-onE"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEf-Hb-h7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1490" y="-315"/>
+            <point key="canvasLocation" x="9" y="353"/>
         </scene>
-        <!--Important Documents-->
-        <scene sceneID="RQs-Oo-Dba">
+        <!--Schedule-->
+        <scene sceneID="qE0-uU-cPC">
             <objects>
-                <viewController id="Cz4-j4-0bD" sceneMemberID="viewController">
+                <viewController id="FXR-5K-QCx" customClass="FirstTableViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jQe-1e-hdl"/>
-                        <viewControllerLayoutGuide type="bottom" id="YnC-Vx-usx"/>
+                        <viewControllerLayoutGuide type="top" id="KlV-Sy-XqO"/>
+                        <viewControllerLayoutGuide type="bottom" id="kVv-vk-Jb1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pBI-ee-nlA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="5xC-PO-Md8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H4A-fm-8Le">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="id" rowHeight="70" id="xkU-K0-FYU" customClass="EventsTableViewCell" customModule="TinoHacksApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xkU-K0-FYU" id="LBP-XM-3kq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H41-ao-REO">
+                                                    <rect key="frame" x="76" y="37" width="330" height="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bF-c5-azV">
+                                                    <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="vjG-Wp-z7Z"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0r-PU-2Y0">
+                                                    <rect key="frame" x="76" y="8" width="320" height="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="H41-ao-REO" secondAttribute="bottom" constant="-1" id="0qC-Uo-27q"/>
+                                                <constraint firstItem="7bF-c5-azV" firstAttribute="leading" secondItem="LBP-XM-3kq" secondAttribute="leadingMargin" id="54T-LL-JzC"/>
+                                                <constraint firstItem="7bF-c5-azV" firstAttribute="top" secondItem="LBP-XM-3kq" secondAttribute="topMargin" id="Jtx-BM-cuI"/>
+                                                <constraint firstItem="g0r-PU-2Y0" firstAttribute="leading" secondItem="H41-ao-REO" secondAttribute="leading" id="MKM-J5-oBg"/>
+                                                <constraint firstItem="7bF-c5-azV" firstAttribute="baseline" secondItem="H41-ao-REO" secondAttribute="firstBaseline" id="aFE-tx-qGq"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7bF-c5-azV" secondAttribute="bottom" constant="3" id="lDZ-gt-G9a"/>
+                                                <constraint firstItem="H41-ao-REO" firstAttribute="top" secondItem="g0r-PU-2Y0" secondAttribute="bottom" constant="4" id="mi5-b1-Wot"/>
+                                                <constraint firstItem="7bF-c5-azV" firstAttribute="firstBaseline" secondItem="g0r-PU-2Y0" secondAttribute="firstBaseline" id="qbx-ge-1DU"/>
+                                                <constraint firstItem="H41-ao-REO" firstAttribute="trailing" secondItem="LBP-XM-3kq" secondAttribute="trailingMargin" id="qzv-YJ-6Ic"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="g0r-PU-2Y0" secondAttribute="trailing" constant="10" id="vRR-DM-Mjq"/>
+                                                <constraint firstItem="g0r-PU-2Y0" firstAttribute="leading" secondItem="7bF-c5-azV" secondAttribute="trailing" constant="18" id="z9F-jD-IbV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="eventDate" destination="H41-ao-REO" id="6Qf-i7-aR3"/>
+                                            <outlet property="eventDay" destination="7bF-c5-azV" id="nPt-UM-Gu1"/>
+                                            <outlet property="eventName" destination="g0r-PU-2Y0" id="uik-jU-Byi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="FXR-5K-QCx" id="OBB-te-IFP"/>
+                                    <outlet property="delegate" destination="FXR-5K-QCx" id="Ugv-0S-AJA"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCF-zv-SvS">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.94999999999999996"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="SCHEDULE" id="wJY-Dm-3V4"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H4A-fm-8Le" firstAttribute="top" secondItem="TCF-zv-SvS" secondAttribute="bottom" id="14t-AA-com"/>
+                            <constraint firstItem="H4A-fm-8Le" firstAttribute="bottom" secondItem="kVv-vk-Jb1" secondAttribute="top" id="FmE-E9-1Xg"/>
+                            <constraint firstItem="TCF-zv-SvS" firstAttribute="top" secondItem="KlV-Sy-XqO" secondAttribute="bottom" id="Rkl-Qo-0vy"/>
+                            <constraint firstItem="TCF-zv-SvS" firstAttribute="leading" secondItem="5xC-PO-Md8" secondAttribute="leading" id="WfK-be-Dmk"/>
+                            <constraint firstItem="TCF-zv-SvS" firstAttribute="leading" secondItem="H4A-fm-8Le" secondAttribute="leading" id="pI7-zk-iBa"/>
+                            <constraint firstItem="TCF-zv-SvS" firstAttribute="trailing" secondItem="H4A-fm-8Le" secondAttribute="trailing" id="rTm-eK-dQh"/>
+                            <constraint firstAttribute="trailing" secondItem="TCF-zv-SvS" secondAttribute="trailing" id="xCd-Ml-s80"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Important Documents" image="first" id="nJK-Ui-DVl"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="Calendar-50" id="RWS-jf-Iee"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e8t-2C-qnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ItV-wL-xnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761" y="399"/>
+            <point key="canvasLocation" x="-1813.0434782608697" y="-143.47826086956522"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="MenuViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -112,11 +144,9 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="CfI-W6-kPC" kind="relationship" relationship="viewControllers" id="b14-WT-gVG"/>
+                        <segue destination="FXR-5K-QCx" kind="relationship" relationship="viewControllers" id="pKJ-Zo-2vl"/>
                         <segue destination="vmX-YK-RHZ" kind="relationship" relationship="viewControllers" id="XaR-57-7BR"/>
-                        <segue destination="Cz4-j4-0bD" kind="relationship" relationship="viewControllers" id="jlx-8h-crU"/>
+                        <segue destination="CfI-W6-kPC" kind="relationship" relationship="viewControllers" id="b14-WT-gVG"/>
                         <segue destination="aCq-fc-tWu" kind="relationship" relationship="viewControllers" id="fcf-6o-CbD"/>
                     </connections>
                 </tabBarController>
@@ -133,18 +163,19 @@
                         <viewControllerLayoutGuide type="bottom" id="QkX-pT-7X0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jAU-3V-7sg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.25658561737512464" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Awards" image="first" id="VSa-sK-Z4a"/>
+                    <tabBarItem key="tabBarItem" title="Awards" image="Prize-50" id="VSa-sK-Z4a"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUI-Tq-sdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761" y="-315"/>
+            <point key="canvasLocation" x="9" y="-507"/>
         </scene>
-        <!--Contact Us-->
+        <!--Contact-->
         <scene sceneID="jHE-f6-2nq">
             <objects>
                 <viewController id="aCq-fc-tWu" sceneMemberID="viewController">
@@ -153,20 +184,23 @@
                         <viewControllerLayoutGuide type="bottom" id="YPV-9q-skp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="l1z-Dm-yno">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.60089319980260736" green="1" blue="0.96899055863882555" alpha="0.0" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Contact Us" image="first" id="FuY-vY-fQ2"/>
+                    <tabBarItem key="tabBarItem" title="Contact" image="Contacts-50" id="FuY-vY-fQ2"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKj-6B-kpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1489" y="399"/>
+            <point key="canvasLocation" x="-1594" y="677"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="Calendar-50" width="25" height="25"/>
+        <image name="Contacts-50" width="25" height="25"/>
+        <image name="List-50" width="25" height="25"/>
+        <image name="Prize-50" width="25" height="25"/>
     </resources>
 </document>

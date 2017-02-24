@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5139AFFB1D91F143007E08B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139AFFA1D91F143007E08B2 /* AppDelegate.swift */; };
-		5139AFFD1D91F143007E08B2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139AFFC1D91F143007E08B2 /* FirstViewController.swift */; };
 		5139AFFF1D91F143007E08B2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139AFFE1D91F143007E08B2 /* SecondViewController.swift */; };
 		5139B0021D91F143007E08B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0001D91F143007E08B2 /* Main.storyboard */; };
 		5139B0041D91F143007E08B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0031D91F143007E08B2 /* Assets.xcassets */; };
@@ -17,14 +16,21 @@
 		5139B0121D91F5B0007E08B2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0111D91F5B0007E08B2 /* logo.png */; };
 		5139B0141D91F689007E08B2 /* favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0131D91F689007E08B2 /* favicon.png */; };
 		5139B0161D91F8AE007E08B2 /* blackbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0151D91F8AE007E08B2 /* blackbg.jpg */; };
-		5139B0181D91F91A007E08B2 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0171D91F91A007E08B2 /* Fonts */; };
 		5139B01A1D920358007E08B2 /* blackbg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0191D920358007E08B2 /* blackbg2.jpg */; };
+		8330F4C21E52471B001E65F9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330F4C11E52471B001E65F9 /* Event.swift */; };
+		8349E9D51E3424D90094DBF4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E9D41E3424D90094DBF4 /* MenuViewController.swift */; };
+		835A6AB21E06621700082842 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB11E06621700082842 /* Fonts */; };
+		835A6AB81E06623C00082842 /* orbitron-black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB31E06623C00082842 /* orbitron-black.otf */; };
+		835A6AB91E06623C00082842 /* orbitron-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB41E06623C00082842 /* orbitron-bold.otf */; };
+		835A6ABA1E06623C00082842 /* orbitron-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB51E06623C00082842 /* orbitron-light.otf */; };
+		835A6ABB1E06623C00082842 /* orbitron-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB61E06623C00082842 /* orbitron-medium.otf */; };
+		83B41E4C1E5CE1F30088F6A4 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */; };
+		83B41E4E1E5CEA7D0088F6A4 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5139AFF71D91F143007E08B2 /* TinoHacksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinoHacksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5139AFFA1D91F143007E08B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5139AFFC1D91F143007E08B2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		5139AFFE1D91F143007E08B2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5139B0011D91F143007E08B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5139B0031D91F143007E08B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,8 +40,16 @@
 		5139B0111D91F5B0007E08B2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		5139B0131D91F689007E08B2 /* favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favicon.png; sourceTree = "<group>"; };
 		5139B0151D91F8AE007E08B2 /* blackbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackbg.jpg; sourceTree = "<group>"; };
-		5139B0171D91F91A007E08B2 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		5139B0191D920358007E08B2 /* blackbg2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackbg2.jpg; sourceTree = "<group>"; };
+		8330F4C11E52471B001E65F9 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		8349E9D41E3424D90094DBF4 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		835A6AB11E06621700082842 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		835A6AB31E06623C00082842 /* orbitron-black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-black.otf"; path = "TinoHacksApp/Fonts/orbitron-black.otf"; sourceTree = "<group>"; };
+		835A6AB41E06623C00082842 /* orbitron-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-bold.otf"; path = "TinoHacksApp/Fonts/orbitron-bold.otf"; sourceTree = "<group>"; };
+		835A6AB51E06623C00082842 /* orbitron-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-light.otf"; path = "TinoHacksApp/Fonts/orbitron-light.otf"; sourceTree = "<group>"; };
+		835A6AB61E06623C00082842 /* orbitron-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-medium.otf"; path = "TinoHacksApp/Fonts/orbitron-medium.otf"; sourceTree = "<group>"; };
+		83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
+		83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,10 @@
 		5139AFEE1D91F143007E08B2 = {
 			isa = PBXGroup;
 			children = (
+				835A6AB31E06623C00082842 /* orbitron-black.otf */,
+				835A6AB41E06623C00082842 /* orbitron-bold.otf */,
+				835A6AB51E06623C00082842 /* orbitron-light.otf */,
+				835A6AB61E06623C00082842 /* orbitron-medium.otf */,
 				5139AFF91D91F143007E08B2 /* TinoHacksApp */,
 				5139AFF81D91F143007E08B2 /* Products */,
 			);
@@ -68,14 +86,17 @@
 		5139AFF91D91F143007E08B2 /* TinoHacksApp */ = {
 			isa = PBXGroup;
 			children = (
-				5139B0171D91F91A007E08B2 /* Fonts */,
+				835A6AB11E06621700082842 /* Fonts */,
 				5139B0101D91F3E7007E08B2 /* images */,
 				5139AFFA1D91F143007E08B2 /* AppDelegate.swift */,
-				5139AFFC1D91F143007E08B2 /* FirstViewController.swift */,
+				83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */,
 				5139AFFE1D91F143007E08B2 /* SecondViewController.swift */,
 				5139B0001D91F143007E08B2 /* Main.storyboard */,
-				5139B0031D91F143007E08B2 /* Assets.xcassets */,
+				83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */,
+				8330F4C11E52471B001E65F9 /* Event.swift */,
+				8349E9D41E3424D90094DBF4 /* MenuViewController.swift */,
 				5139B0051D91F143007E08B2 /* LaunchScreen.storyboard */,
+				5139B0031D91F143007E08B2 /* Assets.xcassets */,
 				5139B0081D91F143007E08B2 /* Info.plist */,
 			);
 			path = TinoHacksApp;
@@ -120,7 +141,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Tino Hacks";
 				TargetAttributes = {
 					5139AFF61D91F143007E08B2 = {
@@ -152,15 +173,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835A6AB81E06623C00082842 /* orbitron-black.otf in Resources */,
+				835A6AB91E06623C00082842 /* orbitron-bold.otf in Resources */,
+				835A6ABA1E06623C00082842 /* orbitron-light.otf in Resources */,
+				835A6ABB1E06623C00082842 /* orbitron-medium.otf in Resources */,
 				5139B0071D91F143007E08B2 /* LaunchScreen.storyboard in Resources */,
 				5139B0161D91F8AE007E08B2 /* blackbg.jpg in Resources */,
 				5139B0121D91F5B0007E08B2 /* logo.png in Resources */,
+				835A6AB21E06621700082842 /* Fonts in Resources */,
 				5139B0141D91F689007E08B2 /* favicon.png in Resources */,
 				5139B0041D91F143007E08B2 /* Assets.xcassets in Resources */,
 				5139B0021D91F143007E08B2 /* Main.storyboard in Resources */,
 				5139B01A1D920358007E08B2 /* blackbg2.jpg in Resources */,
 				5139B00F1D91F3D8007E08B2 /* spacebg.jpg in Resources */,
-				5139B0181D91F91A007E08B2 /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +198,10 @@
 			files = (
 				5139AFFF1D91F143007E08B2 /* SecondViewController.swift in Sources */,
 				5139AFFB1D91F143007E08B2 /* AppDelegate.swift in Sources */,
-				5139AFFD1D91F143007E08B2 /* FirstViewController.swift in Sources */,
+				8349E9D51E3424D90094DBF4 /* MenuViewController.swift in Sources */,
+				8330F4C21E52471B001E65F9 /* Event.swift in Sources */,
+				83B41E4E1E5CEA7D0088F6A4 /* EventsTableViewCell.swift in Sources */,
+				83B41E4C1E5CE1F30088F6A4 /* FirstTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +245,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -267,6 +296,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -335,6 +365,7 @@
 				5139B00D1D91F143007E08B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

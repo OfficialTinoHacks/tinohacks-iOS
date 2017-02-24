@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="orbitron-medium.otf">
-            <string>Orbitron-Medium</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -21,47 +18,14 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackbg2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fL7-U0-6PN"/>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jhn-Xi-eSs">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="287" id="75A-y3-cm5"/>
-                                    <constraint firstAttribute="height" constant="247" id="Vmu-Bs-Fy3"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TinoHacks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQL-Fr-YnS">
-                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="49"/>
-                                <color key="textColor" red="0.95094710339671729" green="0.99261881549532871" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="fL7-U0-6PN" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="9cv-xj-CAw"/>
-                            <constraint firstItem="hQL-Fr-YnS" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="380" id="FYr-xh-nXS"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="hQL-Fr-YnS" secondAttribute="bottom" constant="187" id="Pvt-Yo-Ys4"/>
-                            <constraint firstItem="hQL-Fr-YnS" firstAttribute="centerX" secondItem="jhn-Xi-eSs" secondAttribute="centerX" id="Qp4-cX-NN7"/>
-                            <constraint firstItem="jhn-Xi-eSs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ROB-ar-Te7"/>
-                            <constraint firstItem="fL7-U0-6PN" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-16" id="S0v-U7-nXW"/>
-                            <constraint firstItem="jhn-Xi-eSs" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="158" id="Ylt-Kw-EEH"/>
-                            <constraint firstItem="jhn-Xi-eSs" firstAttribute="width" secondItem="fL7-U0-6PN" secondAttribute="width" constant="-88" id="Zs3-9J-8cA"/>
-                            <constraint firstItem="jhn-Xi-eSs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cWk-DY-Qbq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fL7-U0-6PN" secondAttribute="trailing" constant="-16" id="eTU-pw-f5K"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="fL7-U0-6PN" secondAttribute="bottom" id="ogh-K9-SuU"/>
-                            <constraint firstItem="hQL-Fr-YnS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="v5l-0r-ANp"/>
-                            <constraint firstItem="jhn-Xi-eSs" firstAttribute="width" secondItem="fL7-U0-6PN" secondAttribute="width" constant="-88" id="zhE-lO-uKb"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="50.724637681159422" y="374.18478260869568"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="blackbg2.jpg" width="1280" height="800"/>
-        <image name="favicon.png" width="1308" height="1005"/>
-    </resources>
 </document>
