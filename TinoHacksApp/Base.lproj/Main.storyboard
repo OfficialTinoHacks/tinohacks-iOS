@@ -11,8 +11,13 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="orbitron-medium.otf">
+            <string>Orbitron-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Rules-->
+        <!--RULES-->
         <scene sceneID="pQ8-Zy-1PP">
             <objects>
                 <viewController id="vmX-YK-RHZ" sceneMemberID="viewController">
@@ -23,16 +28,45 @@
                     <view key="view" contentMode="scaleToFill" id="Hdt-2u-jtl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Rule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKB-N1-7gw">
+                                <rect key="frame" x="20" y="72" width="374" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2. Rule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1l-xc-50m">
+                                <rect key="frame" x="20" y="120" width="374" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3. Rule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anz-DO-zw4">
+                                <rect key="frame" x="20" y="168" width="374" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4. Rule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFR-kd-Eh9">
+                                <rect key="frame" x="20" y="216" width="374" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rules" image="List-50" id="if0-P5-onE"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationItem key="navigationItem" title="RULES" id="rnI-Pd-ua6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEf-Hb-h7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9" y="353"/>
+            <point key="canvasLocation" x="1823.1884057971015" y="352.98913043478262"/>
         </scene>
-        <!--Schedule-->
+        <!--SCHEDULE-->
         <scene sceneID="qE0-uU-cPC">
             <objects>
                 <viewController id="FXR-5K-QCx" customClass="FirstTableViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H4A-fm-8Le">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="702"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="id" rowHeight="70" id="xkU-K0-FYU" customClass="EventsTableViewCell" customModule="TinoHacksApp" customModuleProvider="target">
@@ -56,8 +90,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H41-ao-REO">
-                                                    <rect key="frame" x="76" y="37" width="330" height="25"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="76" y="41" width="330" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -66,13 +100,13 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="vjG-Wp-z7Z"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0r-PU-2Y0">
-                                                    <rect key="frame" x="76" y="8" width="320" height="25"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="76" y="8" width="320" height="29"/>
+                                                    <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -104,55 +138,41 @@
                                     <outlet property="delegate" destination="FXR-5K-QCx" id="Ugv-0S-AJA"/>
                                 </connections>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCF-zv-SvS">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.94999999999999996"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="SCHEDULE" id="wJY-Dm-3V4"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="H4A-fm-8Le" firstAttribute="top" secondItem="TCF-zv-SvS" secondAttribute="bottom" id="14t-AA-com"/>
-                            <constraint firstItem="H4A-fm-8Le" firstAttribute="bottom" secondItem="kVv-vk-Jb1" secondAttribute="top" id="FmE-E9-1Xg"/>
-                            <constraint firstItem="TCF-zv-SvS" firstAttribute="top" secondItem="KlV-Sy-XqO" secondAttribute="bottom" id="Rkl-Qo-0vy"/>
-                            <constraint firstItem="TCF-zv-SvS" firstAttribute="leading" secondItem="5xC-PO-Md8" secondAttribute="leading" id="WfK-be-Dmk"/>
-                            <constraint firstItem="TCF-zv-SvS" firstAttribute="leading" secondItem="H4A-fm-8Le" secondAttribute="leading" id="pI7-zk-iBa"/>
-                            <constraint firstItem="TCF-zv-SvS" firstAttribute="trailing" secondItem="H4A-fm-8Le" secondAttribute="trailing" id="rTm-eK-dQh"/>
-                            <constraint firstAttribute="trailing" secondItem="TCF-zv-SvS" secondAttribute="trailing" id="xCd-Ml-s80"/>
+                            <constraint firstItem="H4A-fm-8Le" firstAttribute="leading" secondItem="5xC-PO-Md8" secondAttribute="leading" id="Gj1-C6-XcM"/>
+                            <constraint firstItem="H4A-fm-8Le" firstAttribute="top" secondItem="5xC-PO-Md8" secondAttribute="top" id="IyX-W6-x20"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="H4A-fm-8Le" secondAttribute="bottom" constant="34" id="cPN-oU-m9D"/>
+                            <constraint firstAttribute="trailing" secondItem="H4A-fm-8Le" secondAttribute="trailing" id="tol-64-Z1d"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Schedule" image="Calendar-50" id="RWS-jf-Iee"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <navigationItem key="navigationItem" title="SCHEDULE" id="BTF-aC-3ee"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ItV-wL-xnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1813.0434782608697" y="-143.47826086956522"/>
+            <point key="canvasLocation" x="-878.26086956521749" y="-338.31521739130437"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" customClass="MenuViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="FXR-5K-QCx" kind="relationship" relationship="viewControllers" id="pKJ-Zo-2vl"/>
-                        <segue destination="vmX-YK-RHZ" kind="relationship" relationship="viewControllers" id="XaR-57-7BR"/>
+                        <segue destination="NJG-yv-yjL" kind="relationship" relationship="viewControllers" id="pKJ-Zo-2vl"/>
+                        <segue destination="pwA-Py-tdc" kind="relationship" relationship="viewControllers" id="XaR-57-7BR"/>
                         <segue destination="CfI-W6-kPC" kind="relationship" relationship="viewControllers" id="b14-WT-gVG"/>
                         <segue destination="aCq-fc-tWu" kind="relationship" relationship="viewControllers" id="fcf-6o-CbD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-842" y="-21"/>
+            <point key="canvasLocation" x="65.217391304347828" y="-21.195652173913047"/>
         </scene>
         <!--Awards-->
         <scene sceneID="h9K-hh-91Z">
@@ -165,15 +185,14 @@
                     <view key="view" contentMode="scaleToFill" id="jAU-3V-7sg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.25658561737512464" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Awards" image="Prize-50" id="VSa-sK-Z4a"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUI-Tq-sdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9" y="-507"/>
+            <point key="canvasLocation" x="915.94202898550736" y="-507.06521739130437"/>
         </scene>
         <!--Contact-->
         <scene sceneID="jHE-f6-2nq">
@@ -186,15 +205,62 @@
                     <view key="view" contentMode="scaleToFill" id="l1z-Dm-yno">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.60089319980260736" green="1" blue="0.96899055863882555" alpha="0.0" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contact" image="Contacts-50" id="FuY-vY-fQ2"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKj-6B-kpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1594" y="677"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="OK3-HF-Z6Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NJG-yv-yjL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Schedule" image="Calendar-50" id="RWS-jf-Iee"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NzA-zO-dBV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.2531153434062301" green="0.57719513167866054" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FXR-5K-QCx" kind="relationship" relationship="rootViewController" id="Bmw-dT-6rT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZMS-Ye-HiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1804" y="-338"/>
+        </scene>
+        <!--Rules-->
+        <scene sceneID="Z0L-Up-8bV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pwA-Py-tdc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Rules" image="List-50" id="if0-P5-onE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qfj-5W-lLO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vmX-YK-RHZ" kind="relationship" relationship="rootViewController" id="a5O-Ti-On5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4wh-pX-9cN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915.94202898550736" y="352.98913043478262"/>
         </scene>
     </scenes>
     <resources>
