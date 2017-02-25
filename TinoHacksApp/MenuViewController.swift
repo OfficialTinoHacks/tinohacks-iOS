@@ -12,7 +12,7 @@ class MenuViewController: UITabBarController {
 
        override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBar.selectedItem?.badgeColor = UIColor.white
+        self.tabBar.barTintColor = UIColor.white
     }
 
     override func didReceiveMemoryWarning() {

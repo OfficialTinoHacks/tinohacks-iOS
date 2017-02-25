@@ -18,13 +18,13 @@
 		5139B0161D91F8AE007E08B2 /* blackbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0151D91F8AE007E08B2 /* blackbg.jpg */; };
 		5139B01A1D920358007E08B2 /* blackbg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0191D920358007E08B2 /* blackbg2.jpg */; };
 		8330F4C21E52471B001E65F9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330F4C11E52471B001E65F9 /* Event.swift */; };
-		834167C01E613A4E006A3D45 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834167BF1E613A4E006A3D45 /* FirstTableViewController.swift */; };
 		8349E9D51E3424D90094DBF4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E9D41E3424D90094DBF4 /* MenuViewController.swift */; };
 		835A6AB21E06621700082842 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB11E06621700082842 /* Fonts */; };
 		835A6AB81E06623C00082842 /* orbitron-black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB31E06623C00082842 /* orbitron-black.otf */; };
 		835A6AB91E06623C00082842 /* orbitron-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB41E06623C00082842 /* orbitron-bold.otf */; };
 		835A6ABA1E06623C00082842 /* orbitron-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB51E06623C00082842 /* orbitron-light.otf */; };
 		835A6ABB1E06623C00082842 /* orbitron-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB61E06623C00082842 /* orbitron-medium.otf */; };
+		83B41E4C1E5CE1F30088F6A4 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */; };
 		83B41E4E1E5CEA7D0088F6A4 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,13 +42,13 @@
 		5139B0151D91F8AE007E08B2 /* blackbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackbg.jpg; sourceTree = "<group>"; };
 		5139B0191D920358007E08B2 /* blackbg2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackbg2.jpg; sourceTree = "<group>"; };
 		8330F4C11E52471B001E65F9 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		834167BF1E613A4E006A3D45 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
 		8349E9D41E3424D90094DBF4 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		835A6AB11E06621700082842 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		835A6AB31E06623C00082842 /* orbitron-black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-black.otf"; path = "TinoHacksApp/Fonts/orbitron-black.otf"; sourceTree = "<group>"; };
 		835A6AB41E06623C00082842 /* orbitron-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-bold.otf"; path = "TinoHacksApp/Fonts/orbitron-bold.otf"; sourceTree = "<group>"; };
 		835A6AB51E06623C00082842 /* orbitron-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-light.otf"; path = "TinoHacksApp/Fonts/orbitron-light.otf"; sourceTree = "<group>"; };
 		835A6AB61E06623C00082842 /* orbitron-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-medium.otf"; path = "TinoHacksApp/Fonts/orbitron-medium.otf"; sourceTree = "<group>"; };
+		83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
 		83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,9 +89,9 @@
 				835A6AB11E06621700082842 /* Fonts */,
 				5139B0101D91F3E7007E08B2 /* images */,
 				5139AFFA1D91F143007E08B2 /* AppDelegate.swift */,
+				83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */,
 				5139AFFE1D91F143007E08B2 /* SecondViewController.swift */,
 				5139B0001D91F143007E08B2 /* Main.storyboard */,
-				834167BF1E613A4E006A3D45 /* FirstTableViewController.swift */,
 				83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */,
 				8330F4C11E52471B001E65F9 /* Event.swift */,
 				8349E9D41E3424D90094DBF4 /* MenuViewController.swift */,
@@ -198,10 +198,10 @@
 			files = (
 				5139AFFF1D91F143007E08B2 /* SecondViewController.swift in Sources */,
 				5139AFFB1D91F143007E08B2 /* AppDelegate.swift in Sources */,
-				834167C01E613A4E006A3D45 /* FirstTableViewController.swift in Sources */,
 				8349E9D51E3424D90094DBF4 /* MenuViewController.swift in Sources */,
 				8330F4C21E52471B001E65F9 /* Event.swift in Sources */,
 				83B41E4E1E5CEA7D0088F6A4 /* EventsTableViewCell.swift in Sources */,
+				83B41E4C1E5CE1F30088F6A4 /* FirstTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
