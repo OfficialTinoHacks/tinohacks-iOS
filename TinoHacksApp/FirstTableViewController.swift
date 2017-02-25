@@ -38,7 +38,7 @@ class FirstTableViewController: UIViewController, UITableViewDataSource, UITable
             cell.eventDay.backgroundColor = UIColor(red: 0, green: 0.4667, blue: 0.9098, alpha: 1.0)
         }
         else {
-            cell.eventDay.backgroundColor = UIColor(red: 0.9373, green: 0.9373, blue: 0, alpha: 1.0)
+            cell.eventDay.backgroundColor = UIColor(red: 0.7333, green: 0, blue: 1, alpha: 1.0)
         }
         cell.selectionStyle = UITableViewCellSelectionStyle.none
         return cell
