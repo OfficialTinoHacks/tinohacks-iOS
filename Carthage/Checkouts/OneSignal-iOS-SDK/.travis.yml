@@ -1,0 +1,7 @@
+language: objective-c
+osx_image: xcode8
+before_install:
+  - cd iOS_SDK
+script:
+  - xcodebuild -list
+  - xcodebuild build -scheme OneSignal-Dynamic

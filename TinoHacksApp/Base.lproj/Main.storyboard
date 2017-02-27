@@ -64,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEf-Hb-h7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1823.1884057971015" y="352.98913043478262"/>
+            <point key="canvasLocation" x="2730.434782608696" y="352.98913043478262"/>
         </scene>
         <!--SCHEDULE-->
         <scene sceneID="qE0-uU-cPC">
@@ -86,12 +86,12 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xkU-K0-FYU" id="LBP-XM-3kq">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H41-ao-REO">
-                                                    <rect key="frame" x="76" y="41" width="330" height="21"/>
-                                                    <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
+                                                    <rect key="frame" x="76" y="38" width="330" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -105,8 +105,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0r-PU-2Y0">
-                                                    <rect key="frame" x="76" y="8" width="320" height="29"/>
-                                                    <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
+                                                    <rect key="frame" x="76" y="2.6666666666666661" width="320" height="31.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -148,6 +148,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SCHEDULE" id="BTF-aC-3ee"/>
+                    <connections>
+                        <outlet property="scheduleView" destination="H4A-fm-8Le" id="scW-Ku-cG8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ItV-wL-xnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,24 +160,24 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" customClass="MenuViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="NJG-yv-yjL" kind="relationship" relationship="viewControllers" id="pKJ-Zo-2vl"/>
                         <segue destination="pwA-Py-tdc" kind="relationship" relationship="viewControllers" id="XaR-57-7BR"/>
-                        <segue destination="CfI-W6-kPC" kind="relationship" relationship="viewControllers" id="b14-WT-gVG"/>
-                        <segue destination="aCq-fc-tWu" kind="relationship" relationship="viewControllers" id="fcf-6o-CbD"/>
+                        <segue destination="RI8-5B-X6f" kind="relationship" relationship="viewControllers" id="b14-WT-gVG"/>
+                        <segue destination="P0O-Mc-wXn" kind="relationship" relationship="viewControllers" id="fcf-6o-CbD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="65.217391304347828" y="-21.195652173913047"/>
         </scene>
-        <!--Awards-->
+        <!--AWARDS-->
         <scene sceneID="h9K-hh-91Z">
             <objects>
                 <viewController id="CfI-W6-kPC" sceneMemberID="viewController">
@@ -188,13 +191,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.25658561737512464" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Awards" image="Prize-50" id="VSa-sK-Z4a"/>
+                    <navigationItem key="navigationItem" title="AWARDS" id="E9T-98-jEY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUI-Tq-sdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="915.94202898550736" y="-507.06521739130437"/>
+            <point key="canvasLocation" x="1912" y="-509"/>
         </scene>
-        <!--Contact-->
+        <!--CONTACT-->
         <scene sceneID="jHE-f6-2nq">
             <objects>
                 <viewController id="aCq-fc-tWu" sceneMemberID="viewController">
@@ -208,11 +211,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.60089319980260736" green="1" blue="0.96899055863882555" alpha="0.0" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Contact" image="Contacts-50" id="FuY-vY-fQ2"/>
+                    <navigationItem key="navigationItem" title="CONTACT" id="DZb-PG-6uP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKj-6B-kpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1594" y="677"/>
+            <point key="canvasLocation" x="-686.95652173913049" y="676.63043478260875"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="OK3-HF-Z6Y">
@@ -223,7 +226,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NzA-zO-dBV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.2531153434062301" green="0.57719513167866054" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -260,7 +263,55 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wh-pX-9cN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="915.94202898550736" y="352.98913043478262"/>
+            <point key="canvasLocation" x="1823.1884057971015" y="352.98913043478262"/>
+        </scene>
+        <!--Awards-->
+        <scene sceneID="t2e-C8-9MV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RI8-5B-X6f" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Awards" image="Prize-50" id="VSa-sK-Z4a"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YVs-lc-pTV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CfI-W6-kPC" kind="relationship" relationship="rootViewController" id="5Hv-au-bNT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djk-mc-qIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="-508"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="XMh-Il-xCh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P0O-Mc-wXn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contact" image="Contacts-50" id="FuY-vY-fQ2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c0L-T6-SCS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aCq-fc-tWu" kind="relationship" relationship="rootViewController" id="UaZ-Uf-eTk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9M-xA-lLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1594.2028985507247" y="676.63043478260875"/>
         </scene>
     </scenes>
     <resources>

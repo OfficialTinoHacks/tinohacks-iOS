@@ -9,6 +9,8 @@
 import UIKit
 
 class FirstTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var scheduleView: UITableView!
+    
     //Sample Schedule
     let events: [Event] = [
         Event(name: "Mentor/Sponsor Check-in", time: "10:00 AM", day: "SAT")!,
@@ -35,7 +37,7 @@ class FirstTableViewController: UIViewController, UITableViewDataSource, UITable
         cell.eventDate.text = events[indexPath.row].time
         cell.eventDay.text = events[indexPath.row].day
         if events[indexPath.row].day == "SAT" {
-            cell.eventDay.backgroundColor = UIColor(red: 0, green: 0.4667, blue: 0.9098, alpha: 1.0)
+            cell.eventDay.backgroundColor = UIColor(red:0.137, green:0.639, blue:0.992, alpha:1.000)
         }
         else {
             cell.eventDay.backgroundColor = UIColor(red: 0.7961, green: 0, blue: 1, alpha: 1.0)
@@ -46,6 +48,7 @@ class FirstTableViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scheduleView.separatorStyle = .none
     }
     
     override func didReceiveMemoryWarning() {
