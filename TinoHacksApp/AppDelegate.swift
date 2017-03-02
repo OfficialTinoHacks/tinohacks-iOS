@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        OneSignal.initWithLaunchOptions(launchOptions, appId: "5cadea32-dc9c-4aaf-bf7d-313aab2289d0")
         UIApplication.shared.statusBarStyle = .lightContent
         return true
     }

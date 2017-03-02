@@ -27,6 +27,7 @@
 		839BCE6F1E62C195006C459B /* AwardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BCE6E1E62C195006C459B /* AwardsViewController.swift */; };
 		83B41E4C1E5CE1F30088F6A4 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */; };
 		83B41E4E1E5CEA7D0088F6A4 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */; };
+		83CCC7841E68B97F00D43BDF /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CCC7831E68B97F00D43BDF /* OneSignal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		839BCE6E1E62C195006C459B /* AwardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwardsViewController.swift; sourceTree = "<group>"; };
 		83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
 		83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		83CCC7811E68B93700D43BDF /* TinoHacksApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinoHacksApp.entitlements; sourceTree = "<group>"; };
+		83CCC7831E68B97F00D43BDF /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = Carthage/Build/iOS/OneSignal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83CCC7841E68B97F00D43BDF /* OneSignal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +78,7 @@
 				835A6AB61E06623C00082842 /* orbitron-medium.otf */,
 				5139AFF91D91F143007E08B2 /* TinoHacksApp */,
 				5139AFF81D91F143007E08B2 /* Products */,
+				83CCC7821E68B97F00D43BDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +93,7 @@
 		5139AFF91D91F143007E08B2 /* TinoHacksApp */ = {
 			isa = PBXGroup;
 			children = (
+				83CCC7811E68B93700D43BDF /* TinoHacksApp.entitlements */,
 				835A6AB11E06621700082842 /* Fonts */,
 				5139B0101D91F3E7007E08B2 /* images */,
 				5139AFFA1D91F143007E08B2 /* AppDelegate.swift */,
@@ -117,6 +123,14 @@
 			name = images;
 			sourceTree = "<group>";
 		};
+		83CCC7821E68B97F00D43BDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83CCC7831E68B97F00D43BDF /* OneSignal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,6 +141,7 @@
 				5139AFF31D91F143007E08B2 /* Sources */,
 				5139AFF41D91F143007E08B2 /* Frameworks */,
 				5139AFF51D91F143007E08B2 /* Resources */,
+				83CCC7851E68B99600D43BDF /* OneSignal Run Script */,
 			);
 			buildRules = (
 			);
@@ -149,11 +164,14 @@
 				TargetAttributes = {
 					5139AFF61D91F143007E08B2 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 3UGU3999EX;
+						DevelopmentTeam = 8VHQ7BLW8C;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -199,6 +217,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83CCC7851E68B99600D43BDF /* OneSignal Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/OneSignal.framework",
+			);
+			name = "OneSignal Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5139AFF31D91F143007E08B2 /* Sources */ = {
@@ -336,11 +372,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TinoHacksApp/TinoHacksApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3UGU3999EX;
+				DEVELOPMENT_TEAM = 8VHQ7BLW8C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TinoHacksApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tech.tinohacks.TinoHacksApp;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.tinohacks.TinoHacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -350,11 +391,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TinoHacksApp/TinoHacksApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3UGU3999EX;
+				DEVELOPMENT_TEAM = 8VHQ7BLW8C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TinoHacksApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tech.tinohacks.TinoHacksApp;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.tinohacks.TinoHacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
