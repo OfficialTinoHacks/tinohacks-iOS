@@ -13,17 +13,17 @@ class FirstTableViewController: UIViewController, UITableViewDataSource, UITable
     
     //Sample Schedule
     let events: [Event] = [
-        Event(name: "Mentor/Sponsor Check-in", time: "10:00 AM", day: "SAT", location: "Place")!,
-        Event(name: "Hacker Check-in", time: "11:00 AM", day: "SAT", location: "Place")!,
-        Event(name: "Opening", time: "12:00 PM", day: "SAT", location: "Place")!,
-        Event(name: "Team Mixer", time: "5 PM", day: "SAT", location: "Place")!,
-        Event(name: "Dinner", time: "8 PM", day: "SAT", location: "Place")!,
-        Event(name: "Midnight Snack", time: "12:00 AM", day: "SUN", location: "Place")!,
-        Event(name: "Breakfast", time: "8:00 AM", day: "SUN", location: "Place")!,
-        Event(name: "Hacking Ends", time: "10:00 AM", day: "SUN", location: "Place")!,
-        Event(name: "Lunch", time: "12:00 PM", day: "SUN", location: "Place")!,
-        Event(name: "Judging", time: "3:00 PM", day: "SUN", location: "Place")!,
-        Event(name: "Closing", time: "7:00 PM", day: "SUN", location: "Place")!
+        Event(name: "Mentor/Sponsor Check-in", time: "10:00 AM", day: "SAT", location: "Room 1")!,
+        Event(name: "Hacker Check-in", time: "11:00 AM", day: "SAT", location: "Room 2")!,
+        Event(name: "Opening", time: "12:00 PM", day: "SAT", location: "Room 3")!,
+        Event(name: "Team Mixer", time: "5 PM", day: "SAT", location: "Room 4")!,
+        Event(name: "Dinner", time: "8 PM", day: "SAT", location: "Room 3")!,
+        Event(name: "Midnight Snack", time: "12:00 AM", day: "SUN", location: "Room 2")!,
+        Event(name: "Breakfast", time: "8:00 AM", day: "SUN", location: "Room 1")!,
+        Event(name: "Hacking Ends", time: "10:00 AM", day: "SUN", location: "Room 404")!,
+        Event(name: "Lunch", time: "12:00 PM", day: "SUN", location: "Room 100")!,
+        Event(name: "Judging", time: "3:00 PM", day: "SUN", location: "Ted Mcleod's Room")!,
+        Event(name: "Closing", time: "7:00 PM", day: "SUN", location: "Ha!")!
     ]
     
     

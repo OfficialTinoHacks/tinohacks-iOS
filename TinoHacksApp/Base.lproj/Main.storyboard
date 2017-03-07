@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,55 +17,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--RULES-->
-        <scene sceneID="pQ8-Zy-1PP">
-            <objects>
-                <viewController id="vmX-YK-RHZ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9s8-RD-5WA"/>
-                        <viewControllerLayoutGuide type="bottom" id="AEu-df-zr4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Hdt-2u-jtl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Rule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKB-N1-7gw">
-                                <rect key="frame" x="20" y="72" width="374" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2. Rule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1l-xc-50m">
-                                <rect key="frame" x="20" y="120" width="374" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3. Rule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anz-DO-zw4">
-                                <rect key="frame" x="20" y="168" width="374" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4. Rule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFR-kd-Eh9">
-                                <rect key="frame" x="20" y="216" width="374" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="RULES" id="rnI-Pd-ua6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mEf-Hb-h7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2730.434782608696" y="352.98913043478262"/>
-        </scene>
         <!--SCHEDULE-->
         <scene sceneID="qE0-uU-cPC">
             <objects>
@@ -88,7 +41,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H41-ao-REO">
-                                                    <rect key="frame" x="76" y="39" width="172" height="23"/>
+                                                    <rect key="frame" x="76" y="40" width="172" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -96,22 +49,22 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bF-c5-azV">
                                                     <rect key="frame" x="8" y="8" width="50" height="50"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="Rfq-ak-BfM"/>
+                                                        <constraint firstAttribute="width" constant="50" id="MS6-nQ-t52"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0r-PU-2Y0">
-                                                    <rect key="frame" x="76" y="3" width="320" height="33"/>
+                                                    <rect key="frame" x="76" y="6.3333333333333339" width="320" height="30.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvG-0F-PCP">
-                                                    <rect key="frame" x="256" y="41" width="150" height="18"/>
+                                                    <rect key="frame" x="256" y="44" width="140" height="18"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="0tl-OV-sER"/>
+                                                        <constraint firstAttribute="width" constant="140" id="JpV-xl-fZF"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -119,19 +72,19 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="yvG-0F-PCP" firstAttribute="leading" secondItem="H41-ao-REO" secondAttribute="trailing" constant="8" symbolic="YES" id="6SF-CG-aA1"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="H41-ao-REO" secondAttribute="bottom" constant="-0.3333333333333286" id="Ej2-PC-aGF"/>
-                                                <constraint firstItem="7bF-c5-azV" firstAttribute="leading" secondItem="LBP-XM-3kq" secondAttribute="leadingMargin" id="Gro-mI-CbZ"/>
-                                                <constraint firstItem="yvG-0F-PCP" firstAttribute="trailing" secondItem="LBP-XM-3kq" secondAttribute="trailingMargin" id="LeN-gV-N2Y"/>
-                                                <constraint firstItem="g0r-PU-2Y0" firstAttribute="top" secondItem="LBP-XM-3kq" secondAttribute="topMargin" constant="-5" id="MBE-b0-6db"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="7bF-c5-azV" secondAttribute="bottom" constant="3.6666666666666714" id="Qe7-yy-Zp4"/>
-                                                <constraint firstItem="7bF-c5-azV" firstAttribute="top" secondItem="LBP-XM-3kq" secondAttribute="topMargin" id="ZsU-we-Fod"/>
-                                                <constraint firstItem="g0r-PU-2Y0" firstAttribute="leading" secondItem="H41-ao-REO" secondAttribute="leading" id="dxj-tN-33a"/>
-                                                <constraint firstItem="g0r-PU-2Y0" firstAttribute="leading" secondItem="7bF-c5-azV" secondAttribute="trailing" constant="18" id="eSa-Wg-Ue2"/>
-                                                <constraint firstItem="H41-ao-REO" firstAttribute="top" secondItem="g0r-PU-2Y0" secondAttribute="bottom" constant="3" id="kfe-6a-tNW"/>
-                                                <constraint firstItem="H41-ao-REO" firstAttribute="centerY" secondItem="yvG-0F-PCP" secondAttribute="centerY" id="qXy-Fh-6eB"/>
-                                                <constraint firstItem="yvG-0F-PCP" firstAttribute="top" secondItem="g0r-PU-2Y0" secondAttribute="bottom" constant="5" id="y5t-6c-aA9"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="g0r-PU-2Y0" secondAttribute="trailing" constant="10" id="yPQ-5H-LUy"/>
+                                                <constraint firstItem="7bF-c5-azV" firstAttribute="baseline" secondItem="H41-ao-REO" secondAttribute="firstBaseline" id="2eT-B7-qFu"/>
+                                                <constraint firstItem="g0r-PU-2Y0" firstAttribute="trailing" secondItem="yvG-0F-PCP" secondAttribute="trailing" id="8tn-KS-tgG"/>
+                                                <constraint firstItem="7bF-c5-azV" firstAttribute="leading" secondItem="LBP-XM-3kq" secondAttribute="leadingMargin" id="DSE-QP-Q3Y"/>
+                                                <constraint firstItem="7bF-c5-azV" firstAttribute="top" secondItem="LBP-XM-3kq" secondAttribute="topMargin" id="LpZ-VY-awy"/>
+                                                <constraint firstItem="g0r-PU-2Y0" firstAttribute="leading" secondItem="7bF-c5-azV" secondAttribute="trailing" constant="18" id="NpG-T7-6Wn"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="H41-ao-REO" secondAttribute="bottom" constant="-1" id="TYl-To-jHF"/>
+                                                <constraint firstItem="yvG-0F-PCP" firstAttribute="leading" secondItem="H41-ao-REO" secondAttribute="trailing" constant="8" symbolic="YES" id="Xnz-Ou-eXA"/>
+                                                <constraint firstItem="yvG-0F-PCP" firstAttribute="top" secondItem="g0r-PU-2Y0" secondAttribute="bottom" constant="7" id="b2j-2A-pPy"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="g0r-PU-2Y0" secondAttribute="trailing" constant="10" id="hW4-kh-9RZ"/>
+                                                <constraint firstItem="g0r-PU-2Y0" firstAttribute="leading" secondItem="H41-ao-REO" secondAttribute="leading" id="jK9-6F-WO9"/>
+                                                <constraint firstItem="H41-ao-REO" firstAttribute="top" secondItem="g0r-PU-2Y0" secondAttribute="bottom" constant="3" id="lwq-oK-lUm"/>
+                                                <constraint firstItem="H41-ao-REO" firstAttribute="baseline" secondItem="yvG-0F-PCP" secondAttribute="firstBaseline" id="mYN-wV-L6z"/>
+                                                <constraint firstItem="7bF-c5-azV" firstAttribute="firstBaseline" secondItem="g0r-PU-2Y0" secondAttribute="firstBaseline" id="oYo-uk-cAK"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -187,7 +140,7 @@
             </objects>
             <point key="canvasLocation" x="65.217391304347828" y="-21.195652173913047"/>
         </scene>
-        <!--AWARDS-->
+        <!--PRIZES-->
         <scene sceneID="h9K-hh-91Z">
             <objects>
                 <viewController id="CfI-W6-kPC" sceneMemberID="viewController">
@@ -201,16 +154,16 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.25658561737512464" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="AWARDS" id="E9T-98-jEY"/>
+                    <navigationItem key="navigationItem" title="PRIZES" id="E9T-98-jEY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUI-Tq-sdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1912" y="-509"/>
         </scene>
-        <!--CONTACT-->
+        <!--ABOUT-->
         <scene sceneID="jHE-f6-2nq">
             <objects>
-                <viewController id="aCq-fc-tWu" sceneMemberID="viewController">
+                <viewController id="aCq-fc-tWu" customClass="AboutPageViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gLL-Dj-LUt"/>
                         <viewControllerLayoutGuide type="bottom" id="YPV-9q-skp"/>
@@ -221,7 +174,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.60089319980260736" green="1" blue="0.96899055863882555" alpha="0.0" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CONTACT" id="DZb-PG-6uP"/>
+                    <navigationItem key="navigationItem" title="ABOUT" id="DZb-PG-6uP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rKj-6B-kpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,10 +186,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NJG-yv-yjL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Schedule" image="Calendar-50" id="RWS-jf-Iee"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NzA-zO-dBV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NzA-zO-dBV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -251,16 +204,16 @@
             </objects>
             <point key="canvasLocation" x="-1804" y="-338"/>
         </scene>
-        <!--Rules-->
+        <!--Checklist-->
         <scene sceneID="Z0L-Up-8bV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pwA-Py-tdc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Rules" image="List-50" id="if0-P5-onE"/>
+                    <tabBarItem key="tabBarItem" title="Checklist" image="List-50" id="if0-P5-onE"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qfj-5W-lLO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qfj-5W-lLO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -268,23 +221,52 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vmX-YK-RHZ" kind="relationship" relationship="rootViewController" id="a5O-Ti-On5"/>
+                        <segue destination="nhb-We-jvC" kind="relationship" relationship="rootViewController" id="BRz-uI-TDN"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wh-pX-9cN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1823.1884057971015" y="352.98913043478262"/>
         </scene>
-        <!--Awards-->
+        <!--Table View Controller-->
+        <scene sceneID="7Me-kZ-zTh">
+            <objects>
+                <tableViewController id="nhb-We-jvC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sQ2-1g-3Yy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UAR-eX-OzL">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UAR-eX-OzL" id="542-7Z-dv4">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nhb-We-jvC" id="ZLK-R7-BPw"/>
+                            <outlet property="delegate" destination="nhb-We-jvC" id="mL2-TF-zqu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Mei-kU-95f"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87v-mf-dFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2797" y="353"/>
+        </scene>
+        <!--Prizes-->
         <scene sceneID="t2e-C8-9MV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RI8-5B-X6f" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Awards" image="Prize-50" id="VSa-sK-Z4a"/>
+                    <tabBarItem key="tabBarItem" title="Prizes" image="Prize-50" id="VSa-sK-Z4a"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="YVs-lc-pTV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YVs-lc-pTV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -299,16 +281,16 @@
             </objects>
             <point key="canvasLocation" x="915" y="-508"/>
         </scene>
-        <!--Contact-->
+        <!--About-->
         <scene sceneID="XMh-Il-xCh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P0O-Mc-wXn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contact" image="Contacts-50" id="FuY-vY-fQ2"/>
+                    <tabBarItem key="tabBarItem" title="About" image="Contacts-50" id="FuY-vY-fQ2"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="c0L-T6-SCS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c0L-T6-SCS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
