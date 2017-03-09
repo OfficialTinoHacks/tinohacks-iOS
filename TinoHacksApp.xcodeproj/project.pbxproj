@@ -24,7 +24,7 @@
 		835A6AB91E06623C00082842 /* orbitron-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB41E06623C00082842 /* orbitron-bold.otf */; };
 		835A6ABA1E06623C00082842 /* orbitron-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB51E06623C00082842 /* orbitron-light.otf */; };
 		835A6ABB1E06623C00082842 /* orbitron-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB61E06623C00082842 /* orbitron-medium.otf */; };
-		836946A31E6A72990047C5EF /* AboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836946A21E6A72990047C5EF /* AboutPageViewController.swift */; };
+		839BCE6F1E62C195006C459B /* AwardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BCE6E1E62C195006C459B /* AwardsViewController.swift */; };
 		83B41E4C1E5CE1F30088F6A4 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */; };
 		83B41E4E1E5CEA7D0088F6A4 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */; };
 		83CCC7841E68B97F00D43BDF /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CCC7831E68B97F00D43BDF /* OneSignal.framework */; };
@@ -50,7 +50,7 @@
 		835A6AB41E06623C00082842 /* orbitron-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-bold.otf"; path = "TinoHacksApp/Fonts/orbitron-bold.otf"; sourceTree = "<group>"; };
 		835A6AB51E06623C00082842 /* orbitron-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-light.otf"; path = "TinoHacksApp/Fonts/orbitron-light.otf"; sourceTree = "<group>"; };
 		835A6AB61E06623C00082842 /* orbitron-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-medium.otf"; path = "TinoHacksApp/Fonts/orbitron-medium.otf"; sourceTree = "<group>"; };
-		836946A21E6A72990047C5EF /* AboutPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutPageViewController.swift; sourceTree = "<group>"; };
+		839BCE6E1E62C195006C459B /* AwardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwardsViewController.swift; sourceTree = "<group>"; };
 		83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
 		83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		83CCC7811E68B93700D43BDF /* TinoHacksApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinoHacksApp.entitlements; sourceTree = "<group>"; };
@@ -99,8 +99,8 @@
 				5139AFFA1D91F143007E08B2 /* AppDelegate.swift */,
 				83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */,
 				5139AFFE1D91F143007E08B2 /* SecondViewController.swift */,
-				836946A21E6A72990047C5EF /* AboutPageViewController.swift */,
 				5139B0001D91F143007E08B2 /* Main.storyboard */,
+				839BCE6E1E62C195006C459B /* AwardsViewController.swift */,
 				83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */,
 				8330F4C11E52471B001E65F9 /* Event.swift */,
 				8349E9D41E3424D90094DBF4 /* MenuViewController.swift */,
@@ -242,8 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5139AFFF1D91F143007E08B2 /* SecondViewController.swift in Sources */,
+				839BCE6F1E62C195006C459B /* AwardsViewController.swift in Sources */,
 				5139AFFB1D91F143007E08B2 /* AppDelegate.swift in Sources */,
-				836946A31E6A72990047C5EF /* AboutPageViewController.swift in Sources */,
 				8349E9D51E3424D90094DBF4 /* MenuViewController.swift in Sources */,
 				8330F4C21E52471B001E65F9 /* Event.swift in Sources */,
 				83B41E4E1E5CEA7D0088F6A4 /* EventsTableViewCell.swift in Sources */,
