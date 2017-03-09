@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--RULES-->
+        <!--Map-->
         <scene sceneID="pQ8-Zy-1PP">
             <objects>
                 <viewController id="vmX-YK-RHZ" sceneMemberID="viewController">
@@ -26,39 +26,9 @@
                     <view key="view" contentMode="scaleToFill" id="Hdt-2u-jtl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Rule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKB-N1-7gw">
-                                <rect key="frame" x="20" y="72" width="374" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2. Rule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1l-xc-50m">
-                                <rect key="frame" x="20" y="120" width="374" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3. Rule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anz-DO-zw4">
-                                <rect key="frame" x="20" y="168" width="374" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4. Rule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFR-kd-Eh9">
-                                <rect key="frame" x="20" y="216" width="374" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="RULES" id="rnI-Pd-ua6"/>
+                    <navigationItem key="navigationItem" title="Map" id="rnI-Pd-ua6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEf-Hb-h7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,7 +54,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xkU-K0-FYU" id="LBP-XM-3kq">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H41-ao-REO">
@@ -164,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ItV-wL-xnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-878.26086956521749" y="-338.31521739130437"/>
+            <point key="canvasLocation" x="-941" y="-366"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -178,9 +148,10 @@
                     </tabBar>
                     <connections>
                         <segue destination="NJG-yv-yjL" kind="relationship" relationship="viewControllers" id="pKJ-Zo-2vl"/>
-                        <segue destination="pwA-Py-tdc" kind="relationship" relationship="viewControllers" id="XaR-57-7BR"/>
                         <segue destination="RI8-5B-X6f" kind="relationship" relationship="viewControllers" id="b14-WT-gVG"/>
                         <segue destination="P0O-Mc-wXn" kind="relationship" relationship="viewControllers" id="fcf-6o-CbD"/>
+                        <segue destination="pwA-Py-tdc" kind="relationship" relationship="viewControllers" id="XaR-57-7BR"/>
+                        <segue destination="Bpv-kP-Bti" kind="relationship" relationship="viewControllers" id="WLa-qv-HlF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -236,7 +207,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NzA-zO-dBV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -249,18 +220,18 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMS-Ye-HiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1804" y="-338"/>
+            <point key="canvasLocation" x="-1867" y="-366"/>
         </scene>
-        <!--Rules-->
+        <!--Map-->
         <scene sceneID="Z0L-Up-8bV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pwA-Py-tdc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Rules" image="List-50" id="if0-P5-onE"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="first" id="if0-P5-onE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qfj-5W-lLO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -275,6 +246,47 @@
             </objects>
             <point key="canvasLocation" x="1823.1884057971015" y="352.98913043478262"/>
         </scene>
+        <!--CHECKLIST-->
+        <scene sceneID="Ykx-TW-J1F">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BaO-vn-r4U" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nZc-YP-cbu"/>
+                        <viewControllerLayoutGuide type="bottom" id="K7M-Lo-a8U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wf8-XA-VJR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ndZ-Kb-SYs">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ZNT-Pr-OpA">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZNT-Pr-OpA" id="KJ1-YU-zoB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ndZ-Kb-SYs" firstAttribute="bottom" secondItem="K7M-Lo-a8U" secondAttribute="top" id="OHi-DK-a1z"/>
+                            <constraint firstItem="ndZ-Kb-SYs" firstAttribute="leading" secondItem="wf8-XA-VJR" secondAttribute="leading" id="a41-N0-2s2"/>
+                            <constraint firstItem="ndZ-Kb-SYs" firstAttribute="top" secondItem="nZc-YP-cbu" secondAttribute="bottom" id="jYh-XH-gga"/>
+                            <constraint firstAttribute="trailing" secondItem="ndZ-Kb-SYs" secondAttribute="trailing" id="ppA-dG-nr7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CHECKLIST" id="B85-3R-Ipb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xUb-gW-JKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2755.072463768116" y="1282.3369565217392"/>
+        </scene>
         <!--Awards-->
         <scene sceneID="t2e-C8-9MV">
             <objects>
@@ -284,7 +296,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="YVs-lc-pTV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -308,7 +320,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="c0L-T6-SCS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -323,11 +335,36 @@
             </objects>
             <point key="canvasLocation" x="-1594.2028985507247" y="676.63043478260875"/>
         </scene>
+        <!--CHECKLIST-->
+        <scene sceneID="d7k-AJ-tj9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bpv-kP-Bti" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="CHECKLIST" image="List-50" id="pEi-M0-cvc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Swj-jy-jTk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BaO-vn-r4U" kind="relationship" relationship="rootViewController" id="Cry-Kq-ap0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQ5-aE-Smo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1847.826086956522" y="1282.3369565217392"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Calendar-50" width="25" height="25"/>
         <image name="Contacts-50" width="25" height="25"/>
         <image name="List-50" width="25" height="25"/>
         <image name="Prize-50" width="25" height="25"/>
+        <image name="first" width="30" height="30"/>
     </resources>
 </document>
