@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "FB-FindUsonFacebook-online-144.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Facebook_New_Logo_(2015).svg.png",
+      "filename" : "FB-FindUsonFacebook-online-512.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "FB-FindUsonFacebook-online-1024.png",
       "scale" : "3x"
     }
   ],

@@ -27,7 +27,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBU-lE-XIo">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" scrollEnabled="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qBU-lE-XIo">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                             </mapView>
                         </subviews>
@@ -213,9 +213,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqs-NB-IC1">
                                 <rect key="frame" x="0.0" y="270" width="320" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="gk5-ae-R5l"/>
+                                    <constraint firstAttribute="height" constant="160" id="vMe-5J-7Ob"/>
                                 </constraints>
-                                <state key="normal" image="FacebookLogo">
+                                <state key="normal" image="FindUsOnFB">
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -226,13 +226,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.60089319980260736" green="1" blue="0.96899055863882555" alpha="0.0" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="SUf-gP-cLS" firstAttribute="top" secondItem="gLL-Dj-LUt" secondAttribute="bottom" id="1oP-QS-1fC"/>
-                            <constraint firstItem="Fqs-NB-IC1" firstAttribute="leading" secondItem="l1z-Dm-yno" secondAttribute="leading" id="X7w-ay-b5t"/>
-                            <constraint firstItem="Fqs-NB-IC1" firstAttribute="top" secondItem="SUf-gP-cLS" secondAttribute="bottom" constant="8" symbolic="YES" id="Ybf-bN-dOv"/>
-                            <constraint firstItem="SUf-gP-cLS" firstAttribute="leading" secondItem="l1z-Dm-yno" secondAttribute="leadingMargin" id="fOY-Ib-xnN"/>
-                            <constraint firstItem="YPV-9q-skp" firstAttribute="top" secondItem="Fqs-NB-IC1" secondAttribute="bottom" constant="89" id="hWx-md-Fo2"/>
-                            <constraint firstItem="SUf-gP-cLS" firstAttribute="centerX" secondItem="Fqs-NB-IC1" secondAttribute="centerX" id="irE-Bg-hdN"/>
-                            <constraint firstAttribute="trailing" secondItem="Fqs-NB-IC1" secondAttribute="trailing" id="o7X-mT-aXi"/>
+                            <constraint firstItem="SUf-gP-cLS" firstAttribute="leading" secondItem="l1z-Dm-yno" secondAttribute="leadingMargin" id="82t-QX-74D"/>
+                            <constraint firstItem="YPV-9q-skp" firstAttribute="top" secondItem="Fqs-NB-IC1" secondAttribute="bottom" constant="89" id="OSy-Kn-8yh"/>
+                            <constraint firstItem="Fqs-NB-IC1" firstAttribute="leading" secondItem="l1z-Dm-yno" secondAttribute="leading" id="Otg-4x-4LH"/>
+                            <constraint firstItem="Fqs-NB-IC1" firstAttribute="top" secondItem="SUf-gP-cLS" secondAttribute="bottom" constant="8" symbolic="YES" id="UOQ-TD-j46"/>
+                            <constraint firstItem="SUf-gP-cLS" firstAttribute="top" secondItem="gLL-Dj-LUt" secondAttribute="bottom" id="hPl-bd-c3i"/>
+                            <constraint firstItem="SUf-gP-cLS" firstAttribute="centerX" secondItem="Fqs-NB-IC1" secondAttribute="centerX" id="vJJ-69-iiR"/>
+                            <constraint firstAttribute="trailing" secondItem="Fqs-NB-IC1" secondAttribute="trailing" id="z6X-qd-kQ3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CONTACT" id="DZb-PG-6uP"/>
@@ -409,7 +409,7 @@
     <resources>
         <image name="Calendar-50" width="25" height="25"/>
         <image name="Contacts-50" width="25" height="25"/>
-        <image name="FacebookLogo" width="250" height="94"/>
+        <image name="FindUsOnFB" width="256" height="49"/>
         <image name="List-50" width="25" height="25"/>
         <image name="Prize-50" width="25" height="25"/>
         <image name="first" width="30" height="30"/>
