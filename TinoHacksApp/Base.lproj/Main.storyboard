@@ -381,11 +381,11 @@
             </objects>
             <point key="canvasLocation" x="-1594.2028985507247" y="676.63043478260875"/>
         </scene>
-        <!--CHECKLIST-->
+        <!--Checklist-->
         <scene sceneID="d7k-AJ-tj9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bpv-kP-Bti" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="CHECKLIST" image="List-50" id="pEi-M0-cvc"/>
+                    <tabBarItem key="tabBarItem" title="Checklist" image="List-50" id="pEi-M0-cvc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Swj-jy-jTk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
