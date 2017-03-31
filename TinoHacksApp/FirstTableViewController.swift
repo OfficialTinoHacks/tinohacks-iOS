@@ -13,17 +13,26 @@ class FirstTableViewController: UIViewController, UITableViewDataSource, UITable
     
     //Sample Schedule
     let events: [Event] = [
-        Event(name: "Mentor/Sponsor Check-in", time: "10:00 AM", day: "SAT", location: "Place")!,
-        Event(name: "Hacker Check-in", time: "11:00 AM", day: "SAT", location: "Place")!,
-        Event(name: "Opening", time: "12:00 PM", day: "SAT", location: "Place")!,
-        Event(name: "Team Mixer", time: "5 PM", day: "SAT", location: "Place")!,
-        Event(name: "Dinner", time: "8 PM", day: "SAT", location: "Place")!,
-        Event(name: "Midnight Snack", time: "12:00 AM", day: "SUN", location: "Place")!,
-        Event(name: "Breakfast", time: "8:00 AM", day: "SUN", location: "Place")!,
-        Event(name: "Hacking Ends", time: "10:00 AM", day: "SUN", location: "Place")!,
-        Event(name: "Lunch", time: "12:00 PM", day: "SUN", location: "Place")!,
-        Event(name: "Judging", time: "3:00 PM", day: "SUN", location: "Place")!,
-        Event(name: "Closing", time: "7:00 PM", day: "SUN", location: "Place")!
+        Event(name: "Sponsor/Mentor Check-In", time: "8:00 AM", day: "SAT", location: "42 SV")!,
+        Event(name: "Hacker Check-In", time: "9:00 AM", day: "SAT", location: "42 SV")!,
+        Event(name: "Sponsor Expo", time: "9:00 AM", day: "SAT", location: "42 SV")!,
+        Event(name: "Team Mixer", time: "9:00 AM", day: "SAT", location: "42 SV")!,
+        Event(name: "Kickoff", time: "10:00 AM", day: "SAT", location: "42 SV")!,
+        Event(name: "Hacking Begins", time: "11:00 AM", day: "SAT", location: "42 SV")!,
+        Event(name: "Veg Lunch", time: "11:35 AM", day: "SAT", location: "42 SV")!,
+        Event(name: "Non-veg Lunch", time: "12:00 PM", day: "SAT", location: "42 SV")!,
+        Event(name: "Activites Begin", time: "1:30 PM", day: "SAT", location: "42 SV")!,
+        Event(name: "Veg Dinner", time: "7:00 PM", day: "SAT", location: "42 SV")!,
+        Event(name: "Non-veg Lunch", time: "7:25 PM", day: "SAT", location: "42 SV")!,
+        Event(name: "Cup Stacking", time: "9:00 PM", day: "SAT", location: "42 SV")!,
+        Event(name: "League Competition", time: "10:30 PM", day: "SAT", location: "42 SV")!,
+        Event(name: "Snack", time: "11:42 PM", day: "SAT", location: "42 SV")!,
+        Event(name: "Veg Breakfast", time: "7:42 AM", day: "SUN", location: "42 SV")!,
+        Event(name: "Non-veg Breakfast", time: "8:05 AM", day: "SUN", location: "42 SV")!,
+        Event(name: "Submissions", time: "10:30 AM", day: "SUN", location: "42 SV")!,
+        Event(name: "Hacking Ends", time: "11:00 AM", day: "SUN", location: "42 SV")!,
+        Event(name: "Pitches + Judging", time: "11:45 AM", day: "SUN", location: "42 SV")!,
+        Event(name: "Closing Ceremony", time: "12:55 PM", day: "SUN", location: "42 SV")!
     ]
     
     
@@ -41,7 +50,7 @@ class FirstTableViewController: UIViewController, UITableViewDataSource, UITable
             cell.eventDay.backgroundColor = UIColor(red:0.137, green:0.639, blue:0.992, alpha:1.000)
         }
         else {
-            cell.eventDay.backgroundColor = UIColor(red: 0.7961, green: 0, blue: 1, alpha: 1.0)
+            cell.eventDay.backgroundColor = UIColor(red: 0.7765, green: 0, blue: 0.898, alpha: 1.0)
         }
         cell.selectionStyle = UITableViewCellSelectionStyle.none
         return cell

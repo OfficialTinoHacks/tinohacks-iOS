@@ -16,28 +16,14 @@ class MapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        region.center.latitude = 37.394400
-        region.center.longitude = -122.099796
+        region.center.latitude = 37.548621
+        region.center.longitude = -122.059036
         region.span.latitudeDelta = 0.001
         region.span.longitudeDelta = 0.001
-        mapView.setRegion(region, animated: true)
-        // Do any additional setup after loading the view.
+        mapView.setRegion(region, animated: false)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
