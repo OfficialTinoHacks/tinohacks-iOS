@@ -17,7 +17,6 @@
 		5139B0141D91F689007E08B2 /* favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0131D91F689007E08B2 /* favicon.png */; };
 		5139B0161D91F8AE007E08B2 /* blackbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0151D91F8AE007E08B2 /* blackbg.jpg */; };
 		5139B01A1D920358007E08B2 /* blackbg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0191D920358007E08B2 /* blackbg2.jpg */; };
-		831DBDC51E73940B0070E838 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831DBDC41E73940B0070E838 /* ContactViewController.swift */; };
 		831DBDC71E739B930070E838 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831DBDC61E739B930070E838 /* MapViewController.swift */; };
 		8330F4C21E52471B001E65F9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330F4C11E52471B001E65F9 /* Event.swift */; };
 		8349E9D51E3424D90094DBF4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E9D41E3424D90094DBF4 /* MenuViewController.swift */; };
@@ -45,7 +44,6 @@
 		5139B0131D91F689007E08B2 /* favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favicon.png; sourceTree = "<group>"; };
 		5139B0151D91F8AE007E08B2 /* blackbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackbg.jpg; sourceTree = "<group>"; };
 		5139B0191D920358007E08B2 /* blackbg2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackbg2.jpg; sourceTree = "<group>"; };
-		831DBDC41E73940B0070E838 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		831DBDC61E739B930070E838 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8330F4C11E52471B001E65F9 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		8349E9D41E3424D90094DBF4 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 				5139AFFE1D91F143007E08B2 /* SecondViewController.swift */,
 				5139B0001D91F143007E08B2 /* Main.storyboard */,
 				831DBDC61E739B930070E838 /* MapViewController.swift */,
-				831DBDC41E73940B0070E838 /* ContactViewController.swift */,
 				839BCE6E1E62C195006C459B /* AwardsViewController.swift */,
 				83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */,
 				8330F4C11E52471B001E65F9 /* Event.swift */,
@@ -248,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5139AFFF1D91F143007E08B2 /* SecondViewController.swift in Sources */,
-				831DBDC51E73940B0070E838 /* ContactViewController.swift in Sources */,
 				839BCE6F1E62C195006C459B /* AwardsViewController.swift in Sources */,
 				5139AFFB1D91F143007E08B2 /* AppDelegate.swift in Sources */,
 				831DBDC71E739B930070E838 /* MapViewController.swift in Sources */,

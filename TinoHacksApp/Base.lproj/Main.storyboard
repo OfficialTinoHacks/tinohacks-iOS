@@ -165,7 +165,6 @@
                         <segue destination="Bpv-kP-Bti" kind="relationship" relationship="viewControllers" id="WLa-qv-HlF"/>
                         <segue destination="RI8-5B-X6f" kind="relationship" relationship="viewControllers" id="b14-WT-gVG"/>
                         <segue destination="pwA-Py-tdc" kind="relationship" relationship="viewControllers" id="XaR-57-7BR"/>
-                        <segue destination="P0O-Mc-wXn" kind="relationship" relationship="viewControllers" id="fcf-6o-CbD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -191,58 +190,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUI-Tq-sdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1912" y="-509"/>
-        </scene>
-        <!--CONTACT-->
-        <scene sceneID="jHE-f6-2nq">
-            <objects>
-                <viewController id="aCq-fc-tWu" customClass="ContactViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gLL-Dj-LUt"/>
-                        <viewControllerLayoutGuide type="bottom" id="YPV-9q-skp"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="l1z-Dm-yno">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUf-gP-cLS">
-                                <rect key="frame" x="16" y="64" width="288" height="198"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqs-NB-IC1">
-                                <rect key="frame" x="0.0" y="270" width="320" height="160"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="vMe-5J-7Ob"/>
-                                </constraints>
-                                <state key="normal" image="FindUsOnFB">
-                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="facebookButton:" destination="aCq-fc-tWu" eventType="touchUpInside" id="TSU-bD-7Py"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.60089319980260736" green="1" blue="0.96899055863882555" alpha="0.0" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="SUf-gP-cLS" firstAttribute="leading" secondItem="l1z-Dm-yno" secondAttribute="leadingMargin" id="82t-QX-74D"/>
-                            <constraint firstItem="YPV-9q-skp" firstAttribute="top" secondItem="Fqs-NB-IC1" secondAttribute="bottom" constant="89" id="OSy-Kn-8yh"/>
-                            <constraint firstItem="Fqs-NB-IC1" firstAttribute="leading" secondItem="l1z-Dm-yno" secondAttribute="leading" id="Otg-4x-4LH"/>
-                            <constraint firstItem="Fqs-NB-IC1" firstAttribute="top" secondItem="SUf-gP-cLS" secondAttribute="bottom" constant="8" symbolic="YES" id="UOQ-TD-j46"/>
-                            <constraint firstItem="SUf-gP-cLS" firstAttribute="top" secondItem="gLL-Dj-LUt" secondAttribute="bottom" id="hPl-bd-c3i"/>
-                            <constraint firstItem="SUf-gP-cLS" firstAttribute="centerX" secondItem="Fqs-NB-IC1" secondAttribute="centerX" id="vJJ-69-iiR"/>
-                            <constraint firstAttribute="trailing" secondItem="Fqs-NB-IC1" secondAttribute="trailing" id="z6X-qd-kQ3"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="CONTACT" id="DZb-PG-6uP"/>
-                    <connections>
-                        <outlet property="descriptionLabel" destination="SUf-gP-cLS" id="nS6-Yo-wKO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rKj-6B-kpd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-688.125" y="676.05633802816897"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="OK3-HF-Z6Y">
@@ -357,30 +304,6 @@
             </objects>
             <point key="canvasLocation" x="915" y="-508"/>
         </scene>
-        <!--Contact-->
-        <scene sceneID="XMh-Il-xCh">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P0O-Mc-wXn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contact" image="Contacts-50" id="FuY-vY-fQ2"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c0L-T6-SCS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="aCq-fc-tWu" kind="relationship" relationship="rootViewController" id="UaZ-Uf-eTk"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C9M-xA-lLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1594.2028985507247" y="676.63043478260875"/>
-        </scene>
         <!--Checklist-->
         <scene sceneID="d7k-AJ-tj9">
             <objects>
@@ -408,8 +331,6 @@
     </scenes>
     <resources>
         <image name="Calendar-50" width="25" height="25"/>
-        <image name="Contacts-50" width="25" height="25"/>
-        <image name="FindUsOnFB" width="256" height="49"/>
         <image name="List-50" width="25" height="25"/>
         <image name="Prize-50" width="25" height="25"/>
         <image name="first" width="30" height="30"/>
