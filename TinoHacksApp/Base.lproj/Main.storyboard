@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEf-Hb-h7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2730.434782608696" y="352.98913043478262"/>
+            <point key="canvasLocation" x="1594" y="517"/>
         </scene>
         <!--SCHEDULE-->
         <scene sceneID="qE0-uU-cPC">
@@ -148,7 +148,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ItV-wL-xnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-941.25" y="-366.54929577464787"/>
+            <point key="canvasLocation" x="-582" y="-723"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="MF6-Mm-OFe">
+            <objects>
+                <tableViewController title="News" id="qnj-db-eNZ" customClass="NewsTableViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Xb3-Cg-K1W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="id" id="sGp-nS-bv7">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sGp-nS-bv7" id="KPm-gx-ajk">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qnj-db-eNZ" id="X56-3N-eBh"/>
+                            <outlet property="delegate" destination="qnj-db-eNZ" id="NdQ-GT-TAQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="n0A-3r-Bwt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T5A-pF-b6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-182" y="747"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -164,6 +193,7 @@
                         <segue destination="NJG-yv-yjL" kind="relationship" relationship="viewControllers" id="pKJ-Zo-2vl"/>
                         <segue destination="RI8-5B-X6f" kind="relationship" relationship="viewControllers" id="b14-WT-gVG"/>
                         <segue destination="pwA-Py-tdc" kind="relationship" relationship="viewControllers" id="XaR-57-7BR"/>
+                        <segue destination="osV-er-gvS" kind="relationship" relationship="viewControllers" id="7qa-YV-Ppd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -212,13 +242,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMS-Ye-HiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1867" y="-366"/>
+            <point key="canvasLocation" x="-1359" y="-723"/>
         </scene>
         <!--Map-->
         <scene sceneID="Z0L-Up-8bV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pwA-Py-tdc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" image="first" id="if0-P5-onE"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map_50" id="if0-P5-onE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qfj-5W-lLO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -236,7 +266,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wh-pX-9cN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1823.1884057971015" y="352.98913043478262"/>
+            <point key="canvasLocation" x="784" y="517"/>
         </scene>
         <!--Awards-->
         <scene sceneID="t2e-C8-9MV">
@@ -262,10 +292,35 @@
             </objects>
             <point key="canvasLocation" x="915" y="-508"/>
         </scene>
+        <!--NEWS-->
+        <scene sceneID="0Gz-Ok-dR5">
+            <objects>
+                <navigationController title="NEWS" automaticallyAdjustsScrollViewInsets="NO" id="osV-er-gvS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" image="RSS-50" id="WhS-ER-mqo"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G2k-0h-Mpv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qnj-db-eNZ" kind="relationship" relationship="rootViewController" id="jUi-Cl-f8u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MpR-od-5Ij" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1044" y="747"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Calendar-50" width="25" height="25"/>
+        <image name="Map_50" width="25" height="25"/>
         <image name="Prize-50" width="25" height="25"/>
-        <image name="first" width="30" height="30"/>
+        <image name="RSS-50" width="25" height="25"/>
     </resources>
 </document>
