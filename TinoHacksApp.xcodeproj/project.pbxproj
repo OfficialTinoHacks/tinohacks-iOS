@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5139AFFB1D91F143007E08B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139AFFA1D91F143007E08B2 /* AppDelegate.swift */; };
-		5139AFFF1D91F143007E08B2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5139AFFE1D91F143007E08B2 /* SecondViewController.swift */; };
 		5139B0021D91F143007E08B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0001D91F143007E08B2 /* Main.storyboard */; };
 		5139B0041D91F143007E08B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0031D91F143007E08B2 /* Assets.xcassets */; };
 		5139B0071D91F143007E08B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0051D91F143007E08B2 /* LaunchScreen.storyboard */; };
@@ -34,7 +33,6 @@
 /* Begin PBXFileReference section */
 		5139AFF71D91F143007E08B2 /* TinoHacksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinoHacksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5139AFFA1D91F143007E08B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5139AFFE1D91F143007E08B2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5139B0011D91F143007E08B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5139B0031D91F143007E08B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5139B0061D91F143007E08B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				5139B0101D91F3E7007E08B2 /* images */,
 				5139AFFA1D91F143007E08B2 /* AppDelegate.swift */,
 				83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */,
-				5139AFFE1D91F143007E08B2 /* SecondViewController.swift */,
 				5139B0001D91F143007E08B2 /* Main.storyboard */,
 				831DBDC61E739B930070E838 /* MapViewController.swift */,
 				839BCE6E1E62C195006C459B /* AwardsViewController.swift */,
@@ -244,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5139AFFF1D91F143007E08B2 /* SecondViewController.swift in Sources */,
 				839BCE6F1E62C195006C459B /* AwardsViewController.swift in Sources */,
 				5139AFFB1D91F143007E08B2 /* AppDelegate.swift in Sources */,
 				831DBDC71E739B930070E838 /* MapViewController.swift in Sources */,

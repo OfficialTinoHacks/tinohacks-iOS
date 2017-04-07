@@ -162,7 +162,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="NJG-yv-yjL" kind="relationship" relationship="viewControllers" id="pKJ-Zo-2vl"/>
-                        <segue destination="Bpv-kP-Bti" kind="relationship" relationship="viewControllers" id="WLa-qv-HlF"/>
                         <segue destination="RI8-5B-X6f" kind="relationship" relationship="viewControllers" id="b14-WT-gVG"/>
                         <segue destination="pwA-Py-tdc" kind="relationship" relationship="viewControllers" id="XaR-57-7BR"/>
                     </connections>
@@ -239,47 +238,6 @@
             </objects>
             <point key="canvasLocation" x="1823.1884057971015" y="352.98913043478262"/>
         </scene>
-        <!--CHECKLIST-->
-        <scene sceneID="Ykx-TW-J1F">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BaO-vn-r4U" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nZc-YP-cbu"/>
-                        <viewControllerLayoutGuide type="bottom" id="K7M-Lo-a8U"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wf8-XA-VJR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ndZ-Kb-SYs">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="ZNT-Pr-OpA">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZNT-Pr-OpA" id="KJ1-YU-zoB">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ndZ-Kb-SYs" firstAttribute="bottom" secondItem="K7M-Lo-a8U" secondAttribute="top" id="OHi-DK-a1z"/>
-                            <constraint firstItem="ndZ-Kb-SYs" firstAttribute="leading" secondItem="wf8-XA-VJR" secondAttribute="leading" id="a41-N0-2s2"/>
-                            <constraint firstItem="ndZ-Kb-SYs" firstAttribute="top" secondItem="nZc-YP-cbu" secondAttribute="bottom" id="jYh-XH-gga"/>
-                            <constraint firstAttribute="trailing" secondItem="ndZ-Kb-SYs" secondAttribute="trailing" id="ppA-dG-nr7"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="CHECKLIST" id="B85-3R-Ipb"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xUb-gW-JKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2755.072463768116" y="1282.3369565217392"/>
-        </scene>
         <!--Awards-->
         <scene sceneID="t2e-C8-9MV">
             <objects>
@@ -304,34 +262,9 @@
             </objects>
             <point key="canvasLocation" x="915" y="-508"/>
         </scene>
-        <!--Checklist-->
-        <scene sceneID="d7k-AJ-tj9">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bpv-kP-Bti" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Checklist" image="List-50" id="pEi-M0-cvc"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Swj-jy-jTk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BaO-vn-r4U" kind="relationship" relationship="rootViewController" id="Cry-Kq-ap0"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cQ5-aE-Smo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1847.826086956522" y="1282.3369565217392"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Calendar-50" width="25" height="25"/>
-        <image name="List-50" width="25" height="25"/>
         <image name="Prize-50" width="25" height="25"/>
         <image name="first" width="30" height="30"/>
     </resources>
