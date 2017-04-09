@@ -24,7 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         print(userInfo)
-        
+        if let aps = userInfo["aps"] as? NSDictionary {
+            if let alert = aps["alert"] as? NSDictionary {
+                let title = alert["title"] as! String
+                let subtitle = alert["subtitle"] as! String
+                let body = alert["body"] as! String
+                print(title, subtitle, body)
+            }
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
