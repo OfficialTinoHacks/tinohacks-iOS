@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         OneSignal.initWithLaunchOptions(launchOptions, appId: "5cadea32-dc9c-4aaf-bf7d-313aab2289d0")
@@ -23,13 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        print(userInfo)
         if let aps = userInfo["aps"] as? NSDictionary {
             if let alert = aps["alert"] as? NSDictionary {
                 let title = alert["title"] as! String
-                let subtitle = alert["subtitle"] as! String
                 let body = alert["body"] as! String
-                print(title, subtitle, body)
+                let date = Date()
+                NewsTableViewController.newsData.insert(NewsItem.init(title: title, body: body, date: date), at: 0)
             }
         }
     }

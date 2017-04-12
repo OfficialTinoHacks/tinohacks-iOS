@@ -102,6 +102,7 @@ class FirstTableViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         scheduleView.separatorStyle = .none
     }
     
