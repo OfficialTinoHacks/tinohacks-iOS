@@ -27,7 +27,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qBU-lE-XIo">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qBU-lE-XIo">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                             </mapView>
                         </subviews>
@@ -171,26 +171,6 @@
             </objects>
             <point key="canvasLocation" x="65.217391304347828" y="-21.195652173913047"/>
         </scene>
-        <!--AWARDS-->
-        <scene sceneID="h9K-hh-91Z">
-            <objects>
-                <viewController id="CfI-W6-kPC" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pa3-Yf-p79"/>
-                        <viewControllerLayoutGuide type="bottom" id="QkX-pT-7X0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jAU-3V-7sg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.0" green="0.25658561737512464" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="AWARDS" id="E9T-98-jEY"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MUI-Tq-sdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1912" y="-509"/>
-        </scene>
         <!--Schedule-->
         <scene sceneID="OK3-HF-Z6Y">
             <objects>
@@ -256,12 +236,62 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="CfI-W6-kPC" kind="relationship" relationship="rootViewController" id="5Hv-au-bNT"/>
+                        <segue destination="nMC-77-Ana" kind="relationship" relationship="rootViewController" id="gY4-Ef-LVA"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djk-mc-qIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="915" y="-508"/>
+        </scene>
+        <!--Awards Collection View Controller-->
+        <scene sceneID="mOS-7N-s2s">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="nMC-77-Ana" customClass="AwardsCollectionViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5d2-gz-xdN"/>
+                        <viewControllerLayoutGuide type="bottom" id="6IW-tx-cCd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hV4-48-Z0y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="b4m-Ve-aBN">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PO3-fA-iRr">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Award" id="5Ar-uV-BXZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b4m-Ve-aBN" firstAttribute="bottom" secondItem="6IW-tx-cCd" secondAttribute="top" id="E5t-zf-JXx"/>
+                            <constraint firstItem="b4m-Ve-aBN" firstAttribute="leading" secondItem="hV4-48-Z0y" secondAttribute="leading" id="ZFW-1D-zqB"/>
+                            <constraint firstItem="b4m-Ve-aBN" firstAttribute="top" secondItem="5d2-gz-xdN" secondAttribute="bottom" id="h47-A5-WIw"/>
+                            <constraint firstAttribute="trailing" secondItem="b4m-Ve-aBN" secondAttribute="trailing" id="tz6-2O-ofI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dv1-vg-hR9"/>
+                    <connections>
+                        <outlet property="awardCollection" destination="b4m-Ve-aBN" id="J9Y-qr-uXq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="prI-yS-fW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835.625" y="-508.0985915492958"/>
         </scene>
         <!--NEWS-->
         <scene sceneID="0Gz-Ok-dR5">

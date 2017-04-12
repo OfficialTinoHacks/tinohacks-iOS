@@ -25,8 +25,8 @@
 		835A6ABA1E06623C00082842 /* orbitron-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB51E06623C00082842 /* orbitron-light.otf */; };
 		835A6ABB1E06623C00082842 /* orbitron-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 835A6AB61E06623C00082842 /* orbitron-medium.otf */; };
 		835DA0861E98526900CC170B /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DA0851E98526900CC170B /* NewsTableViewController.swift */; };
+		838E1F7B1E9EEB3C0000E3FA /* AwardsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E1F7A1E9EEB3C0000E3FA /* AwardsCollectionViewController.swift */; };
 		8390B0651E9C8989005EE0E4 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8390B0641E9C8989005EE0E4 /* NewsItem.swift */; };
-		839BCE6F1E62C195006C459B /* AwardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839BCE6E1E62C195006C459B /* AwardsViewController.swift */; };
 		83B41E4C1E5CE1F30088F6A4 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */; };
 		83B41E4E1E5CEA7D0088F6A4 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */; };
 		83CCC7841E68B97F00D43BDF /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CCC7831E68B97F00D43BDF /* OneSignal.framework */; };
@@ -54,8 +54,8 @@
 		835A6AB51E06623C00082842 /* orbitron-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-light.otf"; path = "TinoHacksApp/Fonts/orbitron-light.otf"; sourceTree = "<group>"; };
 		835A6AB61E06623C00082842 /* orbitron-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-medium.otf"; path = "TinoHacksApp/Fonts/orbitron-medium.otf"; sourceTree = "<group>"; };
 		835DA0851E98526900CC170B /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		838E1F7A1E9EEB3C0000E3FA /* AwardsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwardsCollectionViewController.swift; sourceTree = "<group>"; };
 		8390B0641E9C8989005EE0E4 /* NewsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
-		839BCE6E1E62C195006C459B /* AwardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwardsViewController.swift; sourceTree = "<group>"; };
 		83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
 		83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		83CCC7811E68B93700D43BDF /* TinoHacksApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinoHacksApp.entitlements; sourceTree = "<group>"; };
@@ -105,9 +105,9 @@
 				5139AFFA1D91F143007E08B2 /* AppDelegate.swift */,
 				83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */,
 				5139B0001D91F143007E08B2 /* Main.storyboard */,
+				838E1F7A1E9EEB3C0000E3FA /* AwardsCollectionViewController.swift */,
 				835DA0851E98526900CC170B /* NewsTableViewController.swift */,
 				831DBDC61E739B930070E838 /* MapViewController.swift */,
-				839BCE6E1E62C195006C459B /* AwardsViewController.swift */,
 				83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */,
 				83EA39051E9D80D400685D24 /* NewsTableViewCell.swift */,
 				8330F4C11E52471B001E65F9 /* Event.swift */,
@@ -250,13 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				839BCE6F1E62C195006C459B /* AwardsViewController.swift in Sources */,
 				83EA39061E9D80D400685D24 /* NewsTableViewCell.swift in Sources */,
 				5139AFFB1D91F143007E08B2 /* AppDelegate.swift in Sources */,
 				831DBDC71E739B930070E838 /* MapViewController.swift in Sources */,
 				8349E9D51E3424D90094DBF4 /* MenuViewController.swift in Sources */,
 				835DA0861E98526900CC170B /* NewsTableViewController.swift in Sources */,
 				8330F4C21E52471B001E65F9 /* Event.swift in Sources */,
+				838E1F7B1E9EEB3C0000E3FA /* AwardsCollectionViewController.swift in Sources */,
 				83B41E4E1E5CEA7D0088F6A4 /* EventsTableViewCell.swift in Sources */,
 				8390B0651E9C8989005EE0E4 /* NewsItem.swift in Sources */,
 				83B41E4C1E5CE1F30088F6A4 /* FirstTableViewController.swift in Sources */,
