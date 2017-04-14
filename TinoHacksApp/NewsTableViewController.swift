@@ -39,7 +39,7 @@ class NewsTableViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func timeAgoSinceDate(_ date:Date, numericDates:Bool = false) -> String {
-        let calendar = NSCalendar.current
+        let calendar = Calendar.current
         let unitFlags: Set<Calendar.Component> = [.minute, .hour, .day, .weekOfYear, .month, .year, .second]
         let now = Date()
         let earliest = now < date ? now : date
@@ -48,55 +48,74 @@ class NewsTableViewController: UIViewController, UITableViewDataSource, UITableV
         
         if (components.year! >= 2) {
             return "\(components.year!) years ago"
-        } else if (components.year! >= 1){
+        }
+        else if (components.year! >= 1){
             if (numericDates){
                 return "1 year ago"
-            } else {
+            }
+            else {
                 return "Last year"
             }
-        } else if (components.month! >= 2) {
+        }
+        else if (components.month! >= 2) {
             return "\(components.month!) months ago"
-        } else if (components.month! >= 1){
+        }
+        else if (components.month! >= 1){
             if (numericDates){
                 return "1 month ago"
-            } else {
+            }
+            else {
                 return "Last month"
             }
-        } else if (components.weekOfYear! >= 2) {
+        }
+        else if (components.weekOfYear! >= 2) {
             return "\(components.weekOfYear!) weeks ago"
-        } else if (components.weekOfYear! >= 1){
+        }
+        else if (components.weekOfYear! >= 1){
             if (numericDates){
                 return "1 week ago"
-            } else {
+            }
+            else {
                 return "Last week"
             }
-        } else if (components.day! >= 2) {
+        }
+        else if (components.day! >= 2) {
             return "\(components.day!) days ago"
-        } else if (components.day! >= 1){
+        }
+        else if (components.day! >= 1){
             if (numericDates){
                 return "1 day ago"
-            } else {
+            }
+            else {
                 return "Yesterday"
             }
-        } else if (components.hour! >= 2) {
+        }
+        else if (components.hour! >= 2) {
             return "\(components.hour!) hours ago"
-        } else if (components.hour! >= 1){
+        }
+        else if (components.hour! >= 1){
             if (numericDates){
                 return "1 hour ago"
-            } else {
+            }
+            else {
                 return "An hour ago"
             }
-        } else if (components.minute! >= 2) {
+        }
+        else if (components.minute! >= 2) {
             return "\(components.minute!) minutes ago"
-        } else if (components.minute! >= 1){
+        }
+        else if (components.minute! >= 1){
             if (numericDates){
                 return "1 minute ago"
-            } else {
+            }
+            else {
                 return "A minute ago"
             }
-        } else if (components.second! >= 3) {
+        }
+        else if (components.second! >= 3) {
             return "\(components.second!) seconds ago"
-        } else {
+        }
+        else {
             return "Just now"
         }
         
