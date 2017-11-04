@@ -16,7 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        OneSignal.initWithLaunchOptions(launchOptions, appId: "5cadea32-dc9c-4aaf-bf7d-313aab2289d0")
+        let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
+        
+        OneSignal.initWithLaunchOptions(launchOptions, appId: "5cadea32-dc9c-4aaf-bf7d-313aab2289d0", handleNotificationAction: nil, settings: onesignalInitSettings)
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification
+        
+        OneSignal.promptForPushNotifications { (accepted) in
+            print("User accepted notifications: \(accepted)")
+        }
+        
         UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
