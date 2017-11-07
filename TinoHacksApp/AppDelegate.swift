@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("User accepted notifications: \(accepted)")
         }
         
-        UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
     

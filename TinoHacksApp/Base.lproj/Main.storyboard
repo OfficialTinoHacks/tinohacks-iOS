@@ -17,7 +17,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--MAP-->
+        <!--Map-->
         <scene sceneID="pQ8-Zy-1PP">
             <objects>
                 <viewController id="vmX-YK-RHZ" customClass="MapViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,7 +48,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cCd-pa-abk"/>
                     </view>
-                    <navigationItem key="navigationItem" title="MAP" id="rnI-Pd-ua6"/>
+                    <navigationItem key="navigationItem" title="Map" id="rnI-Pd-ua6"/>
                     <connections>
                         <outlet property="mapView" destination="qBU-lE-XIo" id="jr7-LC-TOI"/>
                     </connections>
@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="2400" y="516.54929577464793"/>
         </scene>
-        <!--SCHEDULE-->
+        <!--Schedule-->
         <scene sceneID="qE0-uU-cPC">
             <objects>
                 <viewController id="FXR-5K-QCx" customClass="FirstTableViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -167,7 +167,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cr8-gz-3bj"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SCHEDULE" id="BTF-aC-3ee"/>
+                    <navigationItem key="navigationItem" title="Schedule" id="BTF-aC-3ee"/>
                     <connections>
                         <outlet property="scheduleView" destination="H4A-fm-8Le" id="scW-Ku-cG8"/>
                     </connections>
@@ -206,10 +206,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NzA-zO-dBV">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -230,10 +230,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qfj-5W-lLO">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -254,10 +254,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YVs-lc-pTV">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -278,10 +278,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="G2k-0h-Mpv">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -293,7 +293,7 @@
             </objects>
             <point key="canvasLocation" x="-1044" y="747"/>
         </scene>
-        <!--NEWS-->
+        <!--News-->
         <scene sceneID="hnT-e8-qyw">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="m0A-ay-ywL" customClass="NewsTableViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -370,7 +370,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1gR-y7-pGU"/>
                     </view>
-                    <navigationItem key="navigationItem" title="NEWS" id="31F-LA-4aX"/>
+                    <navigationItem key="navigationItem" title="News" id="31F-LA-4aX"/>
                     <connections>
                         <outlet property="newsFeed" destination="Uk1-Nv-zWz" id="l6r-Th-eeQ"/>
                     </connections>
@@ -379,7 +379,7 @@
             </objects>
             <point key="canvasLocation" x="-131.25" y="746.83098591549299"/>
         </scene>
-        <!--AWARDS-->
+        <!--Awards-->
         <scene sceneID="sam-yn-71y">
             <objects>
                 <viewController id="3Tu-rc-jmM" customClass="AwardsViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -456,7 +456,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UQm-TW-9lq"/>
                     </view>
-                    <navigationItem key="navigationItem" title="AWARDS" id="Ord-KU-idQ"/>
+                    <navigationItem key="navigationItem" title="Awards" id="Ord-KU-idQ"/>
                     <connections>
                         <outlet property="awardsTable" destination="HNL-rm-aGp" id="tDZ-Lr-LkN"/>
                     </connections>
