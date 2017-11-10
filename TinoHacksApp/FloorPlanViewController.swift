@@ -7,21 +7,21 @@
 //
 
 import UIKit
+import PDFKit
 
 class FloorPlanViewController: UIViewController {
-    @IBOutlet var webView: UIWebView!
 
+    let pdfTitle = "floorplan"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let pdf = Bundle.main.url(forResource: "floorplan", withExtension: "pdf", subdirectory: nil, localization: nil) {
-            do {
-                let data = try Data(contentsOf: pdf)
-                webView.load(data, mimeType: "application/pdf", textEncodingName: "", baseURL: pdf.deletingLastPathComponent())
-            }
-            catch {
-                
-            }
+        if let url = Bundle.main.url(forResource: pdfTitle, withExtension: "pdf") {
+            let webView = UIWebView(frame: UIScreen.main.bounds)
+            let urlRequest = URLRequest(url: url)
+            webView.loadRequest(urlRequest)
+            webView.scalesPageToFit = true
+            self.view.addSubview(webView)
         }
     }
 

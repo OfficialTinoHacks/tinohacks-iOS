@@ -19,12 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
         
         OneSignal.initWithLaunchOptions(launchOptions, appId: "5cadea32-dc9c-4aaf-bf7d-313aab2289d0", handleNotificationAction: nil, settings: onesignalInitSettings)
-        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification
+        
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.inAppAlert
         
         OneSignal.promptForPushNotifications { (accepted) in
             print("User accepted notifications: \(accepted)")
         }
-        
         return true
     }
     
