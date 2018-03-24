@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -22,14 +22,14 @@
             <objects>
                 <viewController id="vmX-YK-RHZ" customClass="MapViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hdt-2u-jtl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qBU-lE-XIo">
-                                <rect key="frame" x="0.0" y="68" width="320" height="405"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="603"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqo-dp-mLK">
-                                <rect key="frame" x="16" y="481" width="288" height="30"/>
+                                <rect key="frame" x="0.0" y="699" width="375" height="30"/>
                                 <state key="normal" title="Floor Plan"/>
                                 <connections>
                                     <segue destination="wRv-mq-8y7" kind="show" id="stR-SX-9Ro"/>
@@ -38,13 +38,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="qBU-lE-XIo" firstAttribute="leading" secondItem="Hdt-2u-jtl" secondAttribute="leading" id="Bpp-Sc-I3I"/>
-                            <constraint firstItem="qBU-lE-XIo" firstAttribute="top" secondItem="cCd-pa-abk" secondAttribute="top" constant="4" id="hT2-se-0ok"/>
-                            <constraint firstItem="dqo-dp-mLK" firstAttribute="leading" secondItem="Hdt-2u-jtl" secondAttribute="leadingMargin" id="jvX-M1-UvZ"/>
-                            <constraint firstAttribute="trailing" secondItem="qBU-lE-XIo" secondAttribute="trailing" id="nc7-Gx-ueD"/>
-                            <constraint firstItem="qBU-lE-XIo" firstAttribute="centerX" secondItem="dqo-dp-mLK" secondAttribute="centerX" id="qQX-if-W9a"/>
-                            <constraint firstItem="cCd-pa-abk" firstAttribute="bottom" secondItem="dqo-dp-mLK" secondAttribute="bottom" constant="8" id="sgs-Zu-p9l"/>
-                            <constraint firstItem="dqo-dp-mLK" firstAttribute="top" secondItem="qBU-lE-XIo" secondAttribute="bottom" constant="8" symbolic="YES" id="w69-xI-3Yf"/>
+                            <constraint firstItem="qBU-lE-XIo" firstAttribute="top" secondItem="cCd-pa-abk" secondAttribute="top" id="Gad-3s-Iys"/>
+                            <constraint firstItem="qBU-lE-XIo" firstAttribute="leading" secondItem="Hdt-2u-jtl" secondAttribute="leading" id="Gz4-kz-8yl"/>
+                            <constraint firstItem="dqo-dp-mLK" firstAttribute="bottom" secondItem="cCd-pa-abk" secondAttribute="bottom" id="I93-xN-DoV"/>
+                            <constraint firstItem="qBU-lE-XIo" firstAttribute="trailing" secondItem="dqo-dp-mLK" secondAttribute="trailing" id="J0D-OR-TCR"/>
+                            <constraint firstItem="qBU-lE-XIo" firstAttribute="leading" secondItem="dqo-dp-mLK" secondAttribute="leading" id="Kaa-9U-oV0"/>
+                            <constraint firstItem="dqo-dp-mLK" firstAttribute="top" secondItem="qBU-lE-XIo" secondAttribute="bottom" constant="8" symbolic="YES" id="Od8-OI-Jcw"/>
+                            <constraint firstAttribute="trailing" secondItem="qBU-lE-XIo" secondAttribute="trailing" id="dZZ-uK-jx5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cCd-pa-abk"/>
                     </view>
@@ -55,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEf-Hb-h7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593.75" y="516.54929577464793"/>
+            <point key="canvasLocation" x="1592.8" y="515.76354679802955"/>
         </scene>
         <!--Tools-->
         <scene sceneID="gKS-gB-4Zx">
@@ -63,24 +63,85 @@
                 <navigationController id="g40-3l-uEm" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tools" image="Grid" id="xip-4Y-4JP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="517-rl-ahH">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
+                    <connections>
+                        <segue destination="MWg-Pi-oPr" kind="relationship" relationship="rootViewController" id="qth-lN-DUr"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3r-yQ-uEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1081" y="-677"/>
+        </scene>
+        <!--Tools-->
+        <scene sceneID="Cqm-IO-Rr7">
+            <objects>
+                <collectionViewController id="MWg-Pi-oPr" customClass="ToolsCollectionViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="egk-NW-whK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="w2Q-gK-EL6">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tools" id="2aT-Pi-uhC" customClass="ToolsCollectionViewCell" customModule="TinoHacksApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a66-eh-Fki">
+                                            <rect key="frame" x="29" y="39.666666666666664" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="a66-eh-Fki" firstAttribute="centerX" secondItem="2aT-Pi-uhC" secondAttribute="centerX" id="j6e-lS-5Xt"/>
+                                    <constraint firstItem="a66-eh-Fki" firstAttribute="centerY" secondItem="2aT-Pi-uhC" secondAttribute="centerY" id="m7K-oT-wEg"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="title" destination="a66-eh-Fki" id="J3Q-Ob-XaV"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="MWg-Pi-oPr" id="d7b-hZ-cyd"/>
+                            <outlet property="delegate" destination="MWg-Pi-oPr" id="ban-Lp-JiW"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Tools" id="Zy4-Ad-Uyo"/>
+                    <connections>
+                        <outlet property="toolsCollectionView" destination="egk-NW-whK" id="yJ9-bz-akY"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kle-F4-G3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1910" y="-678"/>
         </scene>
         <!--Floor Plan View Controller-->
         <scene sceneID="48b-OL-G8w">
             <objects>
                 <viewController id="wRv-mq-8y7" customClass="FloorPlanViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Po5-ny-usw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOb-cQ-OvM">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
@@ -103,22 +164,22 @@
             <objects>
                 <viewController id="FXR-5K-QCx" customClass="FirstTableViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5xC-PO-Md8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H4A-fm-8Le">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="id" rowHeight="70" id="xkU-K0-FYU" customClass="EventsTableViewCell" customModule="TinoHacksApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="70"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xkU-K0-FYU" id="LBP-XM-3kq">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H41-ao-REO">
-                                                    <rect key="frame" x="81" y="36" width="226" height="23"/>
+                                                    <rect key="frame" x="81" y="36" width="281" height="23"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="23" id="GRJ-Bx-W1z"/>
                                                     </constraints>
@@ -136,7 +197,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0r-PU-2Y0">
-                                                    <rect key="frame" x="81" y="9" width="216" height="24"/>
+                                                    <rect key="frame" x="81" y="9" width="271" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -215,7 +276,7 @@
                     <tabBarItem key="tabBarItem" title="Schedule" image="Calendar-50" id="RWS-jf-Iee"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NzA-zO-dBV">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -239,7 +300,7 @@
                     <tabBarItem key="tabBarItem" title="Map" image="Map_50" id="if0-P5-onE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qfj-5W-lLO">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -263,7 +324,7 @@
                     <tabBarItem key="tabBarItem" title="News" image="RSS-50" id="WhS-ER-mqo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="G2k-0h-Mpv">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -285,34 +346,34 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="m0A-ay-ywL" customClass="NewsTableViewController" customModule="TinoHacksApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QXK-dm-Hh2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uk1-Nv-zWz">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="news" rowHeight="100" id="8W7-Ec-xrI" customClass="NewsTableViewCell" customModule="TinoHacksApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="100"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8W7-Ec-xrI" id="NnA-z6-pWm">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pig-8N-BBG">
-                                                    <rect key="frame" x="15" y="11" width="165" height="29"/>
+                                                    <rect key="frame" x="15" y="11" width="220" height="29"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moV-YV-kDG">
-                                                    <rect key="frame" x="15" y="48" width="290" height="41.5"/>
+                                                    <rect key="frame" x="15" y="48" width="345" height="41.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJv-F2-vXM">
-                                                    <rect key="frame" x="188" y="15" width="117" height="21"/>
+                                                    <rect key="frame" x="243" y="15" width="117" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="117" id="CUC-Kc-LRy"/>
                                                         <constraint firstAttribute="height" constant="21" id="tHa-X7-rvm"/>

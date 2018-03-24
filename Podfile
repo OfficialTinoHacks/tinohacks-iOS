@@ -7,11 +7,12 @@ target 'TinoHacksApp' do
 
   # Pods for TinoHacksApp
    pod 'OneSignal', '>= 2.5.2', '< 3.0'
+   pod 'HandySwift'
 
 end
 
 target 'OneSignalNotificationServiceExtension' do
   use_frameworks!
-  
+
   pod 'OneSignal', '>= 2.5.2', '< 3.0'
 end

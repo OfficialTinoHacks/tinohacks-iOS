@@ -7,42 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113169036422ACAA205AFC9A30C058C7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241C1206D5D688A7DC0BA3D5EAB0550D /* StringExtension.swift */; };
 		11D0E9EB60321605DEDF452222D8A0BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1216C696AADBFD0461DE973632244191 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BE6AF95293DD4B15B9280011EC6CA3 /* DictionaryExtension.swift */; };
+		135F48B2435E2BE6CBD8A216D58BF992 /* HandySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58EBFA21521CBB81CDEA1691CA3DF847 /* HandySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1792CC823CA5BB4A228EC68CF3DB3B2B /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDCD0C74FB398F3537C64E40A70B050 /* Globals.swift */; };
 		1967D391E61278DEAAFF84CB19249C79 /* Pods-OneSignalNotificationServiceExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BDB4C34951630EB41495EF2A9E5A6D /* Pods-OneSignalNotificationServiceExtension-dummy.m */; };
-		29271CAB3A0FC132247CE9524C4342F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1BFA3575AC55223D3C03D1DD5EB47D95 /* Pods-TinoHacksApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC58EC49FAE667E3938590111117FCA /* Pods-TinoHacksApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32FAC7CF529A9444B731003E3C3BB316 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6052EA58225159ABB80F466B9A3932 /* IntExtension.swift */; };
+		53E2A6A36D264BB296EE17284F3525F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		782880599B2030497160BD012DA16167 /* DispatchTimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEB76DCDDFC69CA51B6D0D06D3CE2D /* DispatchTimeIntervalExtension.swift */; };
+		7C68507A84005F0E8600184DF76CB88D /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D11814A39DFA1B158E403BCD342A943 /* ArrayExtension.swift */; };
+		83FCF812E98565CAC4FFCE79F1B318E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A22FBD79EEDFCC382F0CE1B83AF76D5B /* FrequencyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC94F617352553CDE02162E59A2553 /* FrequencyTable.swift */; };
 		B560798328F02B27552DB78FAB29EBE6 /* Pods-OneSignalNotificationServiceExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17C004F00F921E5B03DD27E834945498 /* Pods-OneSignalNotificationServiceExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC769E7F4B2F5FF8FC0AFB6F987322E0 /* Pods-TinoHacksApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDFF293431D217EC416D70553BACE33 /* Pods-TinoHacksApp-dummy.m */; };
-		FBCA66832229A688886DF6E902AF8BD1 /* Pods-TinoHacksApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EC58EC49FAE667E3938590111117FCA /* Pods-TinoHacksApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C067E4677868284269C8997815059AC9 /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F19AE5F947050388B50AC0A4F8621E4 /* TimeIntervalExtension.swift */; };
+		C59E377FA5F8FC3A5815EB9EFACD4974 /* Pods-TinoHacksApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDFF293431D217EC416D70553BACE33 /* Pods-TinoHacksApp-dummy.m */; };
+		D97778900211FB29F815516003E1C051 /* HandySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 808DA854B6D20DB903CA98787B29DFCF /* HandySwift-dummy.m */; };
+		DBE8346F39A5C7921F1AEC5ED1402F1C /* SortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B162166E6066688EAF921EE8BF396E53 /* SortedArray.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B64A0DC66E5051617E8682A84BF977C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53D85F2A3AC05B1B81BF73FB7503F22D;
+			remoteInfo = HandySwift;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		003741D11C4B763E965830AEAB110894 /* Pods-OneSignalNotificationServiceExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OneSignalNotificationServiceExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0107E81959F737611A31E5671A94C47B /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = iOS_SDK/OneSignalSDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
-		03F0BFE95EDBEC6E457896FFAA822B37 /* Pods_TinoHacksApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TinoHacksApp.framework; path = "Pods-TinoHacksApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05EF9180330C83CC838F2530DFB1C534 /* HandySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HandySwift-prefix.pch"; sourceTree = "<group>"; };
+		0D11814A39DFA1B158E403BCD342A943 /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = Sources/Extensions/ArrayExtension.swift; sourceTree = "<group>"; };
 		17C004F00F921E5B03DD27E834945498 /* Pods-OneSignalNotificationServiceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OneSignalNotificationServiceExtension-umbrella.h"; sourceTree = "<group>"; };
 		1D9CCD55CFA017A836542287D449F03A /* Pods-OneSignalNotificationServiceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OneSignalNotificationServiceExtension.modulemap"; sourceTree = "<group>"; };
 		1EFABAB37625542F7E7104443F614B2A /* Pods-TinoHacksApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TinoHacksApp-frameworks.sh"; sourceTree = "<group>"; };
+		241C1206D5D688A7DC0BA3D5EAB0550D /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Sources/Extensions/StringExtension.swift; sourceTree = "<group>"; };
 		317EAFB6F29909EA8D1621F7050F8E53 /* Pods-OneSignalNotificationServiceExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OneSignalNotificationServiceExtension-resources.sh"; sourceTree = "<group>"; };
+		3F19AE5F947050388B50AC0A4F8621E4 /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeIntervalExtension.swift; path = Sources/Extensions/TimeIntervalExtension.swift; sourceTree = "<group>"; };
+		433869E76830EA4565FBC3AF2B774B08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C745EE524BBCB7F721F2D8CA901386E /* Pods-TinoHacksApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TinoHacksApp.modulemap"; sourceTree = "<group>"; };
 		5353D868422DE09C0DAAE791B0951AB8 /* Pods-TinoHacksApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TinoHacksApp.release.xcconfig"; sourceTree = "<group>"; };
+		58EBFA21521CBB81CDEA1691CA3DF847 /* HandySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HandySwift-umbrella.h"; sourceTree = "<group>"; };
 		5A0EFADEAD971D53A1A30DD7838AA2F1 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		5AEDF4E7577CE1130EBE99596A46DFE3 /* HandySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HandySwift.xcconfig; sourceTree = "<group>"; };
+		5BAEB76DCDDFC69CA51B6D0D06D3CE2D /* DispatchTimeIntervalExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchTimeIntervalExtension.swift; path = Sources/Extensions/DispatchTimeIntervalExtension.swift; sourceTree = "<group>"; };
 		60A7E2FA74DF8A3A42235B25E1FEB703 /* Pods-OneSignalNotificationServiceExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OneSignalNotificationServiceExtension-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		68E63869993D972810F48958605A376A /* Pods-TinoHacksApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TinoHacksApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6BCC9A5A4AE16EEC4C59B56443711045 /* Pods-TinoHacksApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TinoHacksApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6DBE49371C4C4378A0D240D755854101 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OneSignalNotificationServiceExtension.framework; path = "Pods-OneSignalNotificationServiceExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BDCD0C74FB398F3537C64E40A70B050 /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = Sources/Globals.swift; sourceTree = "<group>"; };
+		808DA854B6D20DB903CA98787B29DFCF /* HandySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HandySwift-dummy.m"; sourceTree = "<group>"; };
 		933137EFDD98A6B09DA507C723F75694 /* Pods-TinoHacksApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TinoHacksApp-resources.sh"; sourceTree = "<group>"; };
 		936B3D9E14CFCEEBE4963C219682648F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9AD309F90C50E450507D8A25F8314E16 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EC58EC49FAE667E3938590111117FCA /* Pods-TinoHacksApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TinoHacksApp-umbrella.h"; sourceTree = "<group>"; };
+		A01C80F7528C86ECE7A00DD0572A7D19 /* HandySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HandySwift.framework; path = HandySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6052EA58225159ABB80F466B9A3932 /* IntExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntExtension.swift; path = Sources/Extensions/IntExtension.swift; sourceTree = "<group>"; };
+		B162166E6066688EAF921EE8BF396E53 /* SortedArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SortedArray.swift; path = Sources/Structs/SortedArray.swift; sourceTree = "<group>"; };
 		BD660BB08853CB74BB4FA0DFB08CF2C4 /* Pods-TinoHacksApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TinoHacksApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		D32CCD084A794176ECBED826E1017DDA /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = iOS_SDK/OneSignalSDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
+		D4BE6AF95293DD4B15B9280011EC6CA3 /* DictionaryExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryExtension.swift; path = Sources/Extensions/DictionaryExtension.swift; sourceTree = "<group>"; };
 		D5BDB4C34951630EB41495EF2A9E5A6D /* Pods-OneSignalNotificationServiceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OneSignalNotificationServiceExtension-dummy.m"; sourceTree = "<group>"; };
+		E7F9FC74E703B22D7EDE7E99A65AE051 /* HandySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HandySwift.modulemap; sourceTree = "<group>"; };
+		EB15B0B2AB9155A31CBD4F50FE4FC2C1 /* Pods_TinoHacksApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TinoHacksApp.framework; path = "Pods-TinoHacksApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDFF293431D217EC416D70553BACE33 /* Pods-TinoHacksApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TinoHacksApp-dummy.m"; sourceTree = "<group>"; };
+		F9EC94F617352553CDE02162E59A2553 /* FrequencyTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrequencyTable.swift; path = Sources/Structs/FrequencyTable.swift; sourceTree = "<group>"; };
+		FCD90C6940CE873AC8288FD1111BD9DC /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OneSignalNotificationServiceExtension.framework; path = "Pods-OneSignalNotificationServiceExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF76A53CA3CF7B689B9B6F47B9F525EA /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7581D92D06A34BA0AA8A25615E86E187 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FCF812E98565CAC4FFCE79F1B318E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94B43E5E03DE99144CD1A458A9BD4602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E2A6A36D264BB296EE17284F3525F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99D3AE535077689CE6A8B455649C15E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,31 +105,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9F43EF420BA94B1B95FF9B6B68A548B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29271CAB3A0FC132247CE9524C4342F6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		31024DDD121568A44F4DC265C15F4D16 /* Frameworks */ = {
+		2143CBE144213C735203D8E9C6BA7B0B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0107E81959F737611A31E5671A94C47B /* OneSignal.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6202124E9D433C3EA7B1CF2F09917CA5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B109A558AEC0464E1C8AD13A3517ECA8 /* OneSignal */,
+				694E768A583C371BA287344430A4FB80 /* HandySwift */,
+				496415448DA8CDFA57C3243111ADFE5E /* OneSignal */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		496415448DA8CDFA57C3243111ADFE5E /* OneSignal */ = {
+			isa = PBXGroup;
+			children = (
+				B358A50946EC5BE2198AC64A8CBC692F /* Frameworks */,
+			);
+			name = OneSignal;
+			path = OneSignal;
+			sourceTree = "<group>";
+		};
+		50568E335165322F032844B5A96770E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A01C80F7528C86ECE7A00DD0572A7D19 /* HandySwift.framework */,
+				FCD90C6940CE873AC8288FD1111BD9DC /* Pods_OneSignalNotificationServiceExtension.framework */,
+				EB15B0B2AB9155A31CBD4F50FE4FC2C1 /* Pods_TinoHacksApp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		694E768A583C371BA287344430A4FB80 /* HandySwift */ = {
+			isa = PBXGroup;
+			children = (
+				0D11814A39DFA1B158E403BCD342A943 /* ArrayExtension.swift */,
+				D4BE6AF95293DD4B15B9280011EC6CA3 /* DictionaryExtension.swift */,
+				5BAEB76DCDDFC69CA51B6D0D06D3CE2D /* DispatchTimeIntervalExtension.swift */,
+				F9EC94F617352553CDE02162E59A2553 /* FrequencyTable.swift */,
+				7BDCD0C74FB398F3537C64E40A70B050 /* Globals.swift */,
+				AF6052EA58225159ABB80F466B9A3932 /* IntExtension.swift */,
+				B162166E6066688EAF921EE8BF396E53 /* SortedArray.swift */,
+				241C1206D5D688A7DC0BA3D5EAB0550D /* StringExtension.swift */,
+				3F19AE5F947050388B50AC0A4F8621E4 /* TimeIntervalExtension.swift */,
+				D208DA2D282E2054B94640257C182367 /* Support Files */,
+			);
+			name = HandySwift;
+			path = HandySwift;
 			sourceTree = "<group>";
 		};
 		731C4CB141C09C55CE5DA24881F66880 /* Targets Support Files */ = {
@@ -92,8 +168,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				6202124E9D433C3EA7B1CF2F09917CA5 /* Pods */,
-				E8A6C045ED7FD4B8452816917AC1502E /* Products */,
+				2143CBE144213C735203D8E9C6BA7B0B /* Pods */,
+				50568E335165322F032844B5A96770E7 /* Products */,
 				731C4CB141C09C55CE5DA24881F66880 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -115,13 +191,12 @@
 			path = "Target Support Files/Pods-OneSignalNotificationServiceExtension";
 			sourceTree = "<group>";
 		};
-		B109A558AEC0464E1C8AD13A3517ECA8 /* OneSignal */ = {
+		B358A50946EC5BE2198AC64A8CBC692F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				31024DDD121568A44F4DC265C15F4D16 /* Frameworks */,
+				D32CCD084A794176ECBED826E1017DDA /* OneSignal.framework */,
 			);
-			name = OneSignal;
-			path = OneSignal;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -132,21 +207,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D208DA2D282E2054B94640257C182367 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7F9FC74E703B22D7EDE7E99A65AE051 /* HandySwift.modulemap */,
+				5AEDF4E7577CE1130EBE99596A46DFE3 /* HandySwift.xcconfig */,
+				808DA854B6D20DB903CA98787B29DFCF /* HandySwift-dummy.m */,
+				05EF9180330C83CC838F2530DFB1C534 /* HandySwift-prefix.pch */,
+				58EBFA21521CBB81CDEA1691CA3DF847 /* HandySwift-umbrella.h */,
+				433869E76830EA4565FBC3AF2B774B08 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HandySwift";
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		E8A6C045ED7FD4B8452816917AC1502E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6DBE49371C4C4378A0D240D755854101 /* Pods_OneSignalNotificationServiceExtension.framework */,
-				03F0BFE95EDBEC6E457896FFAA822B37 /* Pods_TinoHacksApp.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FABC0097CE6FCC5B0A0A537AFD2FCF93 /* Pods-TinoHacksApp */ = {
@@ -170,11 +250,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2FC2823D948710FAF7AFBC958BA4C2D1 /* Headers */ = {
+		24521C7B282FB7F4A8248A171FE77722 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBCA66832229A688886DF6E902AF8BD1 /* Pods-TinoHacksApp-umbrella.h in Headers */,
+				135F48B2435E2BE6CBD8A216D58BF992 /* HandySwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,24 +266,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3996ECDCB6A720C614F71B6369F0DFC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BFA3575AC55223D3C03D1DD5EB47D95 /* Pods-TinoHacksApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		619D37A9D687E3B217E0B00AA589C32F /* Pods-TinoHacksApp */ = {
+		53D85F2A3AC05B1B81BF73FB7503F22D /* HandySwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EEBAA173523BDFD5209B1B1EC5EEB1FD /* Build configuration list for PBXNativeTarget "Pods-TinoHacksApp" */;
+			buildConfigurationList = 5223907847A9DD773200B6AFDB4C784F /* Build configuration list for PBXNativeTarget "HandySwift" */;
 			buildPhases = (
-				30604F8791ED65A36B1C16AFA93997FF /* Sources */,
-				D9F43EF420BA94B1B95FF9B6B68A548B /* Frameworks */,
-				2FC2823D948710FAF7AFBC958BA4C2D1 /* Headers */,
+				8FE6DBF7319AF5AFAB5733631AB257C1 /* Sources */,
+				94B43E5E03DE99144CD1A458A9BD4602 /* Frameworks */,
+				24521C7B282FB7F4A8248A171FE77722 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-TinoHacksApp";
-			productName = "Pods-TinoHacksApp";
-			productReference = 03F0BFE95EDBEC6E457896FFAA822B37 /* Pods_TinoHacksApp.framework */;
+			name = HandySwift;
+			productName = HandySwift;
+			productReference = A01C80F7528C86ECE7A00DD0572A7D19 /* HandySwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		745A2536ABC9981AD547B885DBBC3C73 /* Pods-OneSignalNotificationServiceExtension */ = {
@@ -220,7 +308,25 @@
 			);
 			name = "Pods-OneSignalNotificationServiceExtension";
 			productName = "Pods-OneSignalNotificationServiceExtension";
-			productReference = 6DBE49371C4C4378A0D240D755854101 /* Pods_OneSignalNotificationServiceExtension.framework */;
+			productReference = FCD90C6940CE873AC8288FD1111BD9DC /* Pods_OneSignalNotificationServiceExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F2188546A34D73D5773DB4D7CDF4818C /* Pods-TinoHacksApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2A70EDA583F867B62925A3C9A71A1BF /* Build configuration list for PBXNativeTarget "Pods-TinoHacksApp" */;
+			buildPhases = (
+				F968E183858AD0B9FE6CF7EAD3215D7B /* Sources */,
+				7581D92D06A34BA0AA8A25615E86E187 /* Frameworks */,
+				3996ECDCB6A720C614F71B6369F0DFC2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC5B2C696969E0E2AD324E69F488702A /* PBXTargetDependency */,
+			);
+			name = "Pods-TinoHacksApp";
+			productName = "Pods-TinoHacksApp";
+			productReference = EB15B0B2AB9155A31CBD4F50FE4FC2C1 /* Pods_TinoHacksApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -240,25 +346,18 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E8A6C045ED7FD4B8452816917AC1502E /* Products */;
+			productRefGroup = 50568E335165322F032844B5A96770E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				53D85F2A3AC05B1B81BF73FB7503F22D /* HandySwift */,
 				745A2536ABC9981AD547B885DBBC3C73 /* Pods-OneSignalNotificationServiceExtension */,
-				619D37A9D687E3B217E0B00AA589C32F /* Pods-TinoHacksApp */,
+				F2188546A34D73D5773DB4D7CDF4818C /* Pods-TinoHacksApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		30604F8791ED65A36B1C16AFA93997FF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC769E7F4B2F5FF8FC0AFB6F987322E0 /* Pods-TinoHacksApp-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4FFF30A74222236548450440B772FF4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,42 +366,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8FE6DBF7319AF5AFAB5733631AB257C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C68507A84005F0E8600184DF76CB88D /* ArrayExtension.swift in Sources */,
+				1216C696AADBFD0461DE973632244191 /* DictionaryExtension.swift in Sources */,
+				782880599B2030497160BD012DA16167 /* DispatchTimeIntervalExtension.swift in Sources */,
+				A22FBD79EEDFCC382F0CE1B83AF76D5B /* FrequencyTable.swift in Sources */,
+				1792CC823CA5BB4A228EC68CF3DB3B2B /* Globals.swift in Sources */,
+				D97778900211FB29F815516003E1C051 /* HandySwift-dummy.m in Sources */,
+				32FAC7CF529A9444B731003E3C3BB316 /* IntExtension.swift in Sources */,
+				DBE8346F39A5C7921F1AEC5ED1402F1C /* SortedArray.swift in Sources */,
+				113169036422ACAA205AFC9A30C058C7 /* StringExtension.swift in Sources */,
+				C067E4677868284269C8997815059AC9 /* TimeIntervalExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F968E183858AD0B9FE6CF7EAD3215D7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59E377FA5F8FC3A5815EB9EFACD4974 /* Pods-TinoHacksApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin XCBuildConfiguration section */
-		2727CF952373553E78D9F183482DC956 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5353D868422DE09C0DAAE791B0951AB8 /* Pods-TinoHacksApp.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TinoHacksApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TinoHacksApp/Pods-TinoHacksApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TinoHacksApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
+/* Begin PBXTargetDependency section */
+		BC5B2C696969E0E2AD324E69F488702A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HandySwift;
+			target = 53D85F2A3AC05B1B81BF73FB7503F22D /* HandySwift */;
+			targetProxy = B64A0DC66E5051617E8682A84BF977C2 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
 		6999DB3B0AB513F5E4E094BEAE8DFAB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A0EFADEAD971D53A1A30DD7838AA2F1 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
@@ -396,6 +496,40 @@
 			};
 			name = Debug;
 		};
+		8A42744AA57D9F0685DE441AEE3B273E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68E63869993D972810F48958605A376A /* Pods-TinoHacksApp.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TinoHacksApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TinoHacksApp/Pods-TinoHacksApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TinoHacksApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		98F29E7567052F62660DDD7069ADF73C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -451,9 +585,9 @@
 			};
 			name = Release;
 		};
-		A6773557E9E3AA256F54DB9A6BE45626 /* Debug */ = {
+		9F68BB5542A8B8EACEF3092EE1AD01F4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68E63869993D972810F48958605A376A /* Pods-TinoHacksApp.debug.xcconfig */;
+			baseConfigurationReference = 5AEDF4E7577CE1130EBE99596A46DFE3 /* HandySwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -464,24 +598,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TinoHacksApp/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/HandySwift/HandySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HandySwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TinoHacksApp/Pods-TinoHacksApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TinoHacksApp;
+				MODULEMAP_FILE = "Target Support Files/HandySwift/HandySwift.modulemap";
+				PRODUCT_NAME = HandySwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		BCD6C5B2295CBAE510A2D07EA0502993 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -517,6 +651,71 @@
 			};
 			name = Release;
 		};
+		E4337FC9E6AD5658A39145A355CD6D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AEDF4E7577CE1130EBE99596A46DFE3 /* HandySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HandySwift/HandySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HandySwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HandySwift/HandySwift.modulemap";
+				PRODUCT_NAME = HandySwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FC2F3ADF6F13D0FE1781D1303353DE05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5353D868422DE09C0DAAE791B0951AB8 /* Pods-TinoHacksApp.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TinoHacksApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TinoHacksApp/Pods-TinoHacksApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TinoHacksApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -525,6 +724,15 @@
 			buildConfigurations = (
 				7C07ED8089F70A31B83996A8910D7F18 /* Debug */,
 				98F29E7567052F62660DDD7069ADF73C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5223907847A9DD773200B6AFDB4C784F /* Build configuration list for PBXNativeTarget "HandySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4337FC9E6AD5658A39145A355CD6D34 /* Debug */,
+				9F68BB5542A8B8EACEF3092EE1AD01F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -538,11 +746,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EEBAA173523BDFD5209B1B1EC5EEB1FD /* Build configuration list for PBXNativeTarget "Pods-TinoHacksApp" */ = {
+		A2A70EDA583F867B62925A3C9A71A1BF /* Build configuration list for PBXNativeTarget "Pods-TinoHacksApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6773557E9E3AA256F54DB9A6BE45626 /* Debug */,
-				2727CF952373553E78D9F183482DC956 /* Release */,
+				8A42744AA57D9F0685DE441AEE3B273E /* Debug */,
+				FC2F3ADF6F13D0FE1781D1303353DE05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

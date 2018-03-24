@@ -17,9 +17,10 @@
 		83496EEF1FAC1DF3003528F2 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 83496EE81FAC1DF3003528F2 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		83496EF51FAC1E1B003528F2 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83496EF41FAC1E1B003528F2 /* NotificationService.swift */; };
 		8349E9D51E3424D90094DBF4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E9D41E3424D90094DBF4 /* MenuViewController.swift */; };
+		8355423E2063504D00A99AE5 /* ToolsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355423D2063504D00A99AE5 /* ToolsCollectionViewController.swift */; };
+		835542412063553C00A99AE5 /* ToolsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835542402063553C00A99AE5 /* ToolsCollectionViewCell.swift */; };
+		835D17182066EB9400A47BDC /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835D17172066EB9400A47BDC /* Tool.swift */; };
 		835DA0861E98526900CC170B /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DA0851E98526900CC170B /* NewsTableViewController.swift */; };
-		837103F01EA027FC00D06EA1 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837103EF1EA027FC00D06EA1 /* Award.swift */; };
-		837103F21EA0290D00D06EA1 /* AwardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837103F11EA0290D00D06EA1 /* AwardTableViewCell.swift */; };
 		8390B0651E9C8989005EE0E4 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8390B0641E9C8989005EE0E4 /* NewsItem.swift */; };
 		83A7020E1EA0AF3C0038A842 /* floorplan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 83A7020D1EA0AF3C0038A842 /* floorplan.pdf */; };
 		83A702101EA0AFDD0038A842 /* FloorPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A7020F1EA0AFDD0038A842 /* FloorPlanViewController.swift */; };
@@ -74,9 +75,10 @@
 		83496EF31FAC1E1A003528F2 /* OneSignalNotificationServiceExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OneSignalNotificationServiceExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		83496EF41FAC1E1B003528F2 /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		8349E9D41E3424D90094DBF4 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8355423D2063504D00A99AE5 /* ToolsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsCollectionViewController.swift; sourceTree = "<group>"; };
+		835542402063553C00A99AE5 /* ToolsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsCollectionViewCell.swift; sourceTree = "<group>"; };
+		835D17172066EB9400A47BDC /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		835DA0851E98526900CC170B /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
-		837103EF1EA027FC00D06EA1 /* Award.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
-		837103F11EA0290D00D06EA1 /* AwardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwardTableViewCell.swift; sourceTree = "<group>"; };
 		8390B0641E9C8989005EE0E4 /* NewsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
 		83A7020D1EA0AF3C0038A842 /* floorplan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = floorplan.pdf; sourceTree = "<group>"; };
 		83A7020F1EA0AFDD0038A842 /* FloorPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorPlanViewController.swift; sourceTree = "<group>"; };
@@ -130,24 +132,17 @@
 		5139AFF91D91F143007E08B2 /* TinoHacksApp */ = {
 			isa = PBXGroup;
 			children = (
+				8355423F2063505100A99AE5 /* Tools */,
+				831B7C7120634D970000A0AC /* Schedule */,
+				831B7C7020634D830000A0AC /* News */,
+				831B7C6F20634D6D0000A0AC /* Map */,
 				83CCC7811E68B93700D43BDF /* TinoHacksApp.entitlements */,
 				5139AFFA1D91F143007E08B2 /* AppDelegate.swift */,
-				83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */,
 				5139B0001D91F143007E08B2 /* Main.storyboard */,
-				83A7020F1EA0AFDD0038A842 /* FloorPlanViewController.swift */,
-				835DA0851E98526900CC170B /* NewsTableViewController.swift */,
-				831DBDC61E739B930070E838 /* MapViewController.swift */,
-				83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */,
-				83EA39051E9D80D400685D24 /* NewsTableViewCell.swift */,
-				8330F4C11E52471B001E65F9 /* Event.swift */,
 				8349E9D41E3424D90094DBF4 /* MenuViewController.swift */,
 				5139B0051D91F143007E08B2 /* LaunchScreen.storyboard */,
-				8390B0641E9C8989005EE0E4 /* NewsItem.swift */,
-				837103EF1EA027FC00D06EA1 /* Award.swift */,
-				837103F11EA0290D00D06EA1 /* AwardTableViewCell.swift */,
 				5139B0031D91F143007E08B2 /* Assets.xcassets */,
 				5139B0081D91F143007E08B2 /* Info.plist */,
-				83A7020D1EA0AF3C0038A842 /* floorplan.pdf */,
 			);
 			path = TinoHacksApp;
 			sourceTree = "<group>";
@@ -161,6 +156,36 @@
 				3423D8370D95DFA5B39D4DA8 /* Pods-TinoHacksApp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		831B7C6F20634D6D0000A0AC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				83A7020D1EA0AF3C0038A842 /* floorplan.pdf */,
+				83A7020F1EA0AFDD0038A842 /* FloorPlanViewController.swift */,
+				831DBDC61E739B930070E838 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		831B7C7020634D830000A0AC /* News */ = {
+			isa = PBXGroup;
+			children = (
+				83EA39051E9D80D400685D24 /* NewsTableViewCell.swift */,
+				835DA0851E98526900CC170B /* NewsTableViewController.swift */,
+				8390B0641E9C8989005EE0E4 /* NewsItem.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		831B7C7120634D970000A0AC /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				8330F4C11E52471B001E65F9 /* Event.swift */,
+				83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */,
+				83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */,
+			);
+			path = Schedule;
 			sourceTree = "<group>";
 		};
 		832AF7EE1FAC1C7A004754DE /* Frameworks */ = {
@@ -182,6 +207,16 @@
 				83496EF31FAC1E1A003528F2 /* OneSignalNotificationServiceExtension-Bridging-Header.h */,
 			);
 			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		8355423F2063505100A99AE5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8355423D2063504D00A99AE5 /* ToolsCollectionViewController.swift */,
+				835542402063553C00A99AE5 /* ToolsCollectionViewCell.swift */,
+				835D17172066EB9400A47BDC /* Tool.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +275,7 @@
 				TargetAttributes = {
 					5139AFF61D91F143007E08B2 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 8VHQ7BLW8C;
+						DevelopmentTeam = 7B2LH6WH6Q;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -254,7 +289,7 @@
 					};
 					83496EE71FAC1DF3003528F2 = {
 						CreatedOnToolsVersion = 9.1;
-						DevelopmentTeam = 8VHQ7BLW8C;
+						DevelopmentTeam = 7B2LH6WH6Q;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
@@ -340,9 +375,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TinoHacksApp/Pods-TinoHacksApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HandySwift/HandySwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandySwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -393,11 +431,12 @@
 				83EA39061E9D80D400685D24 /* NewsTableViewCell.swift in Sources */,
 				5139AFFB1D91F143007E08B2 /* AppDelegate.swift in Sources */,
 				831DBDC71E739B930070E838 /* MapViewController.swift in Sources */,
-				837103F01EA027FC00D06EA1 /* Award.swift in Sources */,
 				8349E9D51E3424D90094DBF4 /* MenuViewController.swift in Sources */,
-				837103F21EA0290D00D06EA1 /* AwardTableViewCell.swift in Sources */,
 				835DA0861E98526900CC170B /* NewsTableViewController.swift in Sources */,
 				8330F4C21E52471B001E65F9 /* Event.swift in Sources */,
+				835D17182066EB9400A47BDC /* Tool.swift in Sources */,
+				8355423E2063504D00A99AE5 /* ToolsCollectionViewController.swift in Sources */,
+				835542412063553C00A99AE5 /* ToolsCollectionViewCell.swift in Sources */,
 				83B41E4E1E5CEA7D0088F6A4 /* EventsTableViewCell.swift in Sources */,
 				8390B0651E9C8989005EE0E4 /* NewsItem.swift in Sources */,
 				83B41E4C1E5CE1F30088F6A4 /* FirstTableViewController.swift in Sources */,
@@ -558,14 +597,14 @@
 				CODE_SIGN_ENTITLEMENTS = TinoHacksApp/TinoHacksApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 8VHQ7BLW8C;
+				DEVELOPMENT_TEAM = 7B2LH6WH6Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TinoHacksApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tech.tinohacks.TinoHacks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinohacks.tinohacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -581,14 +620,14 @@
 				CODE_SIGN_ENTITLEMENTS = TinoHacksApp/TinoHacksApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 8VHQ7BLW8C;
+				DEVELOPMENT_TEAM = 7B2LH6WH6Q;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TinoHacksApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tech.tinohacks.TinoHacks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinohacks.tinohacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -606,12 +645,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8VHQ7BLW8C;
+				DEVELOPMENT_TEAM = 7B2LH6WH6Q;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tech.tinohacks.TinoHacks.OneSignalNotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinohacks.tinohacks.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension-Bridging-Header.h";
@@ -632,12 +671,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8VHQ7BLW8C;
+				DEVELOPMENT_TEAM = 7B2LH6WH6Q;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = tech.tinohacks.TinoHacks.OneSignalNotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinohacks.tinohacks.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension-Bridging-Header.h";
