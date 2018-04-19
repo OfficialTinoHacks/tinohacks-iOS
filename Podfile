@@ -7,8 +7,9 @@ target 'TinoHacksApp' do
 
   # Pods for TinoHacksApp
    pod 'OneSignal', '>= 2.5.2', '< 3.0'
-   pod 'HandySwift'
-
+   pod 'Firebase/Core'
+   pod 'Firebase/Database'
+   pod 'Alamofire'
 end
 
 target 'OneSignalNotificationServiceExtension' do

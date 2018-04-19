@@ -7,18 +7,19 @@
 //
 
 import UIKit
+import Alamofire
 
 class NewsTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var newsFeed: UITableView!
     
-    static var newsData: [NewsItem] = []
+    var newsData: [NewsItem] = []
+    
+    let REST_API_KEY = "OTRmMDEyODQtZThiZC00ZTgyLWIyZjQtMmYxY2ViZjEwYmNm"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        self.newsFeed.reloadData()
+        
+        refreshTable()
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,98 +27,41 @@ class NewsTableViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return NewsTableViewController.newsData.count
+        return newsData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = newsFeed.dequeueReusableCell(withIdentifier: "news", for: indexPath) as! NewsTableViewCell
-        cell.title.text = NewsTableViewController.newsData[indexPath.row].title
-        cell.body.text = NewsTableViewController.newsData[indexPath.row].body
-        cell.date.text = timeAgoSinceDate(NewsTableViewController.newsData[indexPath.row].date)
+        cell.title.text = newsData[indexPath.row].title
+        cell.body.text = newsData[indexPath.row].body
+        cell.date.text = newsData[indexPath.row].date
         cell.selectionStyle = .none
         return cell
     }
     
-    func timeAgoSinceDate(_ date:Date, numericDates:Bool = false) -> String {
-        let calendar = Calendar.current
-        let unitFlags: Set<Calendar.Component> = [.minute, .hour, .day, .weekOfYear, .month, .year, .second]
-        let now = Date()
-        let earliest = now < date ? now : date
-        let latest = (earliest == now) ? date : now
-        let components = calendar.dateComponents(unitFlags, from: earliest,  to: latest)
+    func refreshTable() {
+        self.newsData.removeAll()
+        self.newsFeed.reloadData()
         
-        if (components.year! >= 2) {
-            return "\(components.year!) years ago"
-        }
-        else if (components.year! >= 1){
-            if (numericDates){
-                return "1 year ago"
-            }
-            else {
-                return "Last year"
-            }
-        }
-        else if (components.month! >= 2) {
-            return "\(components.month!) months ago"
-        }
-        else if (components.month! >= 1){
-            if (numericDates){
-                return "1 month ago"
-            }
-            else {
-                return "Last month"
-            }
-        }
-        else if (components.weekOfYear! >= 2) {
-            return "\(components.weekOfYear!) weeks ago"
-        }
-        else if (components.weekOfYear! >= 1){
-            if (numericDates){
-                return "1 week ago"
-            }
-            else {
-                return "Last week"
-            }
-        }
-        else if (components.day! >= 2) {
-            return "\(components.day!) days ago"
-        }
-        else if (components.day! >= 1){
-            if (numericDates){
-                return "1 day ago"
-            }
-            else {
-                return "Yesterday"
-            }
-        }
-        else if (components.hour! >= 2) {
-            return "\(components.hour!) hours ago"
-        }
-        else if (components.hour! >= 1){
-            if (numericDates){
-                return "1 hour ago"
-            }
-            else {
-                return "An hour ago"
-            }
-        }
-        else if (components.minute! >= 2) {
-            return "\(components.minute!) minutes ago"
-        }
-        else if (components.minute! >= 1){
-            if (numericDates){
-                return "1 minute ago"
-            }
-            else {
-                return "A minute ago"
-            }
-        }
-        else if (components.second! >= 3) {
-            return "\(components.second!) seconds ago"
-        }
-        else {
-            return "Just now"
-        }
+        let headers: HTTPHeaders =  [
+            "Authorization": "Basic \(REST_API_KEY)"
+        ]
         
+        Alamofire.request("https://onesignal.com/api/v1/notifications?app_id=f007ff53-ebb8-454e-8de5-16c3e75036e7&limit=50&offset=0", headers: headers).responseJSON { (response) in
+            switch response.result {
+            case .success:
+                let result = response.result.value as! NSDictionary
+                let notifications = result["notifications"] as! NSArray
+                for notification in notifications {
+                    let item = notification as! NSDictionary
+                    let contents = item["contents"] as! NSDictionary
+                    let headings = item["headings"] as! NSDictionary
+                    self.newsData.append(NewsItem(title: headings["en"] as! String, body: contents["en"] as! String, date: item["delivery_time_of_day"] as! String))
+                    self.newsFeed.reloadData()
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
 }

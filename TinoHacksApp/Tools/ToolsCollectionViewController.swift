@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 private let reuseIdentifier = "tools"
 
@@ -15,43 +16,21 @@ class ToolsCollectionViewController: UICollectionViewController {
     @IBOutlet var toolsCollectionView: UICollectionView!
     
     let tools: [Tool] = [
-        Tool(name: "Tool 1", color: UIColor.red)!,
-        Tool(name: "Tool 2", color: UIColor.orange)!,
-        Tool(name: "Tool 3", color: UIColor.yellow)!,
-        Tool(name: "Tool 4", color: UIColor.green)!,
-        Tool(name: "Tool 5", color: UIColor.blue)!,
-        Tool(name: "Tool 6", color: UIColor.purple)!,
-        Tool(name: "Tool 1", color: UIColor.red)!,
-        Tool(name: "Tool 2", color: UIColor.orange)!,
-        Tool(name: "Tool 3", color: UIColor.yellow)!,
-        Tool(name: "Tool 4", color: UIColor.green)!,
-        Tool(name: "Tool 5", color: UIColor.blue)!,
-        Tool(name: "Tool 6", color: UIColor.purple)!,
-        Tool(name: "Tool 1", color: UIColor.red)!,
-        Tool(name: "Tool 2", color: UIColor.orange)!,
-        Tool(name: "Tool 3", color: UIColor.yellow)!,
-        Tool(name: "Tool 4", color: UIColor.green)!,
-        Tool(name: "Tool 5", color: UIColor.blue)!,
-        Tool(name: "Tool 6", color: UIColor.purple)!,
-        Tool(name: "Tool 1", color: UIColor.red)!,
-        Tool(name: "Tool 2", color: UIColor.orange)!,
-        Tool(name: "Tool 3", color: UIColor.yellow)!,
-        Tool(name: "Tool 4", color: UIColor.green)!,
-        Tool(name: "Tool 5", color: UIColor.blue)!,
-        Tool(name: "Tool 6", color: UIColor.purple)!
+        Tool(image: #imageLiteral(resourceName: "GithubStudent"), link: URL(string: "https://education.github.com/pack/")!)!,
+        Tool(image: #imageLiteral(resourceName: "hackclub"), link: URL(string: "https://hackclub.com")!)!,
+        Tool(image: #imageLiteral(resourceName: "hackplus"), link: URL(string: "https://hackplus.io")!)!,
+        Tool(image: #imageLiteral(resourceName: "jetbrains"), link: URL(string: "https://www.jetbrains.com")!)!,
+        Tool(image: #imageLiteral(resourceName: "makeschool"), link: URL(string: "https://www.makeschool.com")!)!,
+        Tool(image: #imageLiteral(resourceName: "wolfram"), link: URL(string: "https://www.wolfram.com/language/")!)!,
+        Tool(image: #imageLiteral(resourceName: "devpost"), link: URL(string: "https://devpost.com")!)!,
+        Tool(image: #imageLiteral(resourceName: "twilio"), link: URL(string: "https://www.twilio.com")!)!,
+        Tool(image: #imageLiteral(resourceName: "trello"), link: URL(string: "https://trello.com")!)!,
+        Tool(image: #imageLiteral(resourceName: "slack"), link: URL(string: "https://slack.com")!)!
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        // self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
-        
         if let layout = toolsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.minimumLineSpacing = 0
             layout.minimumInteritemSpacing = 0
@@ -64,71 +43,31 @@ class ToolsCollectionViewController: UICollectionViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return tools.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ToolsCollectionViewCell
     
-        // Configure the cell
-        cell.title.text = tools[indexPath.row].name
-        cell.backgroundColor = tools[indexPath.row].color
+        cell.imageView.image = tools[indexPath.row].image
+        cell.url = tools[indexPath.row].link
     
         return cell
     }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let safariViewController = SFSafariViewController(url: tools[indexPath.row].link)
+        if #available(iOS 11.0, *) {
+            safariViewController.dismissButtonStyle = SFSafariViewController.DismissButtonStyle.close
+            safariViewController.preferredControlTintColor = UIColor(red:0.545, green:0.333, blue:0.741, alpha:1.000)
+        }
+        present(safariViewController, animated: true, completion: nil)
     }
-    */
-
 }

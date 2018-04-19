@@ -12,21 +12,25 @@
 		5139B0021D91F143007E08B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0001D91F143007E08B2 /* Main.storyboard */; };
 		5139B0041D91F143007E08B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0031D91F143007E08B2 /* Assets.xcassets */; };
 		5139B0071D91F143007E08B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5139B0051D91F143007E08B2 /* LaunchScreen.storyboard */; };
-		831DBDC71E739B930070E838 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831DBDC61E739B930070E838 /* MapViewController.swift */; };
 		8330F4C21E52471B001E65F9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330F4C11E52471B001E65F9 /* Event.swift */; };
 		83496EEF1FAC1DF3003528F2 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 83496EE81FAC1DF3003528F2 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		83496EF51FAC1E1B003528F2 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83496EF41FAC1E1B003528F2 /* NotificationService.swift */; };
 		8349E9D51E3424D90094DBF4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E9D41E3424D90094DBF4 /* MenuViewController.swift */; };
 		8355423E2063504D00A99AE5 /* ToolsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355423D2063504D00A99AE5 /* ToolsCollectionViewController.swift */; };
-		835542412063553C00A99AE5 /* ToolsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835542402063553C00A99AE5 /* ToolsCollectionViewCell.swift */; };
 		835D17182066EB9400A47BDC /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835D17172066EB9400A47BDC /* Tool.swift */; };
 		835DA0861E98526900CC170B /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DA0851E98526900CC170B /* NewsTableViewController.swift */; };
+		838ED85D208198DA003962C8 /* DidactGothic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 838ED85C208198D8003962C8 /* DidactGothic-Regular.ttf */; };
+		838ED85E208198DA003962C8 /* DidactGothic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 838ED85C208198D8003962C8 /* DidactGothic-Regular.ttf */; };
+		838ED86120819CC3003962C8 /* ToolsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838ED86020819CC3003962C8 /* ToolsCollectionViewCell.swift */; };
+		838ED86220819CC3003962C8 /* ToolsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838ED86020819CC3003962C8 /* ToolsCollectionViewCell.swift */; };
 		8390B0651E9C8989005EE0E4 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8390B0641E9C8989005EE0E4 /* NewsItem.swift */; };
-		83A7020E1EA0AF3C0038A842 /* floorplan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 83A7020D1EA0AF3C0038A842 /* floorplan.pdf */; };
-		83A702101EA0AFDD0038A842 /* FloorPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A7020F1EA0AFDD0038A842 /* FloorPlanViewController.swift */; };
+		839899282087E09300DA2D6B /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839899272087E09200DA2D6B /* OpenSans-SemiBold.ttf */; };
+		839899292087E09300DA2D6B /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 839899272087E09200DA2D6B /* OpenSans-SemiBold.ttf */; };
 		83B41E4C1E5CE1F30088F6A4 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */; };
 		83B41E4E1E5CEA7D0088F6A4 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */; };
 		83EA39061E9D80D400685D24 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA39051E9D80D400685D24 /* NewsTableViewCell.swift */; };
+		83FD90432081870B00578D92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83FD90422081870B00578D92 /* GoogleService-Info.plist */; };
+		83FD90442081870B00578D92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83FD90422081870B00578D92 /* GoogleService-Info.plist */; };
 		F6E8D90A02DACF7FCCB5B57A /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE9FACEA6BD2F40BFD5D2D8 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +70,6 @@
 		5139B0061D91F143007E08B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5139B0081D91F143007E08B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F69690C2FF16421417D9EB1 /* Pods_TinoHacksApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinoHacksApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		831DBDC61E739B930070E838 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		832AF7EF1FAC1C7A004754DE /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		832AF7F11FAC1C7A004754DE /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		8330F4C11E52471B001E65F9 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -76,16 +79,17 @@
 		83496EF41FAC1E1B003528F2 /* NotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		8349E9D41E3424D90094DBF4 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		8355423D2063504D00A99AE5 /* ToolsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsCollectionViewController.swift; sourceTree = "<group>"; };
-		835542402063553C00A99AE5 /* ToolsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsCollectionViewCell.swift; sourceTree = "<group>"; };
 		835D17172066EB9400A47BDC /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		835DA0851E98526900CC170B /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		838ED85C208198D8003962C8 /* DidactGothic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DidactGothic-Regular.ttf"; sourceTree = "<group>"; };
+		838ED86020819CC3003962C8 /* ToolsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsCollectionViewCell.swift; sourceTree = "<group>"; };
 		8390B0641E9C8989005EE0E4 /* NewsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
-		83A7020D1EA0AF3C0038A842 /* floorplan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = floorplan.pdf; sourceTree = "<group>"; };
-		83A7020F1EA0AFDD0038A842 /* FloorPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloorPlanViewController.swift; sourceTree = "<group>"; };
+		839899272087E09200DA2D6B /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		83B41E4B1E5CE1F30088F6A4 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
 		83B41E4D1E5CEA7D0088F6A4 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		83CCC7811E68B93700D43BDF /* TinoHacksApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TinoHacksApp.entitlements; sourceTree = "<group>"; };
 		83EA39051E9D80D400685D24 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		83FD90422081870B00578D92 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BAE9FACEA6BD2F40BFD5D2D8 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,7 +139,6 @@
 				8355423F2063505100A99AE5 /* Tools */,
 				831B7C7120634D970000A0AC /* Schedule */,
 				831B7C7020634D830000A0AC /* News */,
-				831B7C6F20634D6D0000A0AC /* Map */,
 				83CCC7811E68B93700D43BDF /* TinoHacksApp.entitlements */,
 				5139AFFA1D91F143007E08B2 /* AppDelegate.swift */,
 				5139B0001D91F143007E08B2 /* Main.storyboard */,
@@ -143,6 +146,8 @@
 				5139B0051D91F143007E08B2 /* LaunchScreen.storyboard */,
 				5139B0031D91F143007E08B2 /* Assets.xcassets */,
 				5139B0081D91F143007E08B2 /* Info.plist */,
+				83FD90422081870B00578D92 /* GoogleService-Info.plist */,
+				838ED85F20819B8E003962C8 /* Fonts */,
 			);
 			path = TinoHacksApp;
 			sourceTree = "<group>";
@@ -156,16 +161,6 @@
 				3423D8370D95DFA5B39D4DA8 /* Pods-TinoHacksApp.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		831B7C6F20634D6D0000A0AC /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				83A7020D1EA0AF3C0038A842 /* floorplan.pdf */,
-				83A7020F1EA0AFDD0038A842 /* FloorPlanViewController.swift */,
-				831DBDC61E739B930070E838 /* MapViewController.swift */,
-			);
-			path = Map;
 			sourceTree = "<group>";
 		};
 		831B7C7020634D830000A0AC /* News */ = {
@@ -213,10 +208,19 @@
 			isa = PBXGroup;
 			children = (
 				8355423D2063504D00A99AE5 /* ToolsCollectionViewController.swift */,
-				835542402063553C00A99AE5 /* ToolsCollectionViewCell.swift */,
 				835D17172066EB9400A47BDC /* Tool.swift */,
+				838ED86020819CC3003962C8 /* ToolsCollectionViewCell.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		838ED85F20819B8E003962C8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				839899272087E09200DA2D6B /* OpenSans-SemiBold.ttf */,
+				838ED85C208198D8003962C8 /* DidactGothic-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +236,6 @@
 				5139AFF51D91F143007E08B2 /* Resources */,
 				832AF8001FAC1C7A004754DE /* Embed App Extensions */,
 				8E3756DC64BBFAF47427FCCB /* [CP] Embed Pods Frameworks */,
-				CEE13228D92927EAED0F6C65 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,7 +255,6 @@
 				83496EE41FAC1DF3003528F2 /* Sources */,
 				83496EE51FAC1DF3003528F2 /* Frameworks */,
 				83496EE61FAC1DF3003528F2 /* Resources */,
-				23AE5385B048130FC75FAE33 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,7 +272,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Tino Hacks";
 				TargetAttributes = {
 					5139AFF61D91F143007E08B2 = {
@@ -279,6 +281,9 @@
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
@@ -319,9 +324,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A7020E1EA0AF3C0038A842 /* floorplan.pdf in Resources */,
 				5139B0071D91F143007E08B2 /* LaunchScreen.storyboard in Resources */,
+				83FD90432081870B00578D92 /* GoogleService-Info.plist in Resources */,
+				838ED85D208198DA003962C8 /* DidactGothic-Regular.ttf in Resources */,
 				5139B0041D91F143007E08B2 /* Assets.xcassets in Resources */,
+				839899282087E09300DA2D6B /* OpenSans-SemiBold.ttf in Resources */,
 				5139B0021D91F143007E08B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,27 +337,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838ED85E208198DA003962C8 /* DidactGothic-Regular.ttf in Resources */,
+				839899292087E09300DA2D6B /* OpenSans-SemiBold.ttf in Resources */,
+				83FD90442081870B00578D92 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		23AE5385B048130FC75FAE33 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		401CB75B1F0EE6A6DF01B1C4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,30 +371,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TinoHacksApp/Pods-TinoHacksApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HandySwift/HandySwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandySwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TinoHacksApp/Pods-TinoHacksApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CEE13228D92927EAED0F6C65 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TinoHacksApp/Pods-TinoHacksApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED7B163DEF67CB693FC4EB50 /* [CP] Check Pods Manifest.lock */ = {
@@ -427,16 +413,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A702101EA0AFDD0038A842 /* FloorPlanViewController.swift in Sources */,
 				83EA39061E9D80D400685D24 /* NewsTableViewCell.swift in Sources */,
 				5139AFFB1D91F143007E08B2 /* AppDelegate.swift in Sources */,
-				831DBDC71E739B930070E838 /* MapViewController.swift in Sources */,
 				8349E9D51E3424D90094DBF4 /* MenuViewController.swift in Sources */,
+				838ED86120819CC3003962C8 /* ToolsCollectionViewCell.swift in Sources */,
 				835DA0861E98526900CC170B /* NewsTableViewController.swift in Sources */,
 				8330F4C21E52471B001E65F9 /* Event.swift in Sources */,
 				835D17182066EB9400A47BDC /* Tool.swift in Sources */,
 				8355423E2063504D00A99AE5 /* ToolsCollectionViewController.swift in Sources */,
-				835542412063553C00A99AE5 /* ToolsCollectionViewCell.swift in Sources */,
 				83B41E4E1E5CEA7D0088F6A4 /* EventsTableViewCell.swift in Sources */,
 				8390B0651E9C8989005EE0E4 /* NewsItem.swift in Sources */,
 				83B41E4C1E5CE1F30088F6A4 /* FirstTableViewController.swift in Sources */,
@@ -447,6 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838ED86220819CC3003962C8 /* ToolsCollectionViewCell.swift in Sources */,
 				83496EF51FAC1E1B003528F2 /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +479,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -501,6 +487,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -551,6 +538,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -558,6 +546,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -592,7 +581,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0433E1CDE4D44A65D97094F5 /* Pods-TinoHacksApp.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TinoHacksApp/TinoHacksApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -606,8 +594,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinohacks.tinohacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -615,7 +604,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3423D8370D95DFA5B39D4DA8 /* Pods-TinoHacksApp.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TinoHacksApp/TinoHacksApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -629,8 +617,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinohacks.tinohacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

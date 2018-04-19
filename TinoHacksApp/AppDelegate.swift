@@ -8,6 +8,7 @@
 
 import UIKit
 import OneSignal
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,9 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        
         let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
         
-        OneSignal.initWithLaunchOptions(launchOptions, appId: "5cadea32-dc9c-4aaf-bf7d-313aab2289d0", handleNotificationAction: nil, settings: onesignalInitSettings)
+        OneSignal.initWithLaunchOptions(launchOptions, appId: "f007ff53-ebb8-454e-8de5-16c3e75036e7", handleNotificationAction: nil, settings: onesignalInitSettings)
         
         OneSignal.inFocusDisplayType = OSNotificationDisplayType.inAppAlert
         
@@ -28,17 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        if let aps = userInfo["aps"] as? NSDictionary {
-            if let alert = aps["alert"] as? NSDictionary {
-                let title = alert["title"] as! String
-                let body = alert["body"] as! String
-                let date = Date()
-                NewsTableViewController.newsData.insert(NewsItem.init(title: title, body: body, date: date), at: 0)
-            }
-        }
-    }
-
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

@@ -11,9 +11,9 @@ import UIKit
 class NewsItem: NSObject {
     let title: String
     let body: String
-    let date: Date
+    let date: String
     
-    init(title: String, body: String, date: Date) {
+    init(title: String, body: String, date: String) {
         self.title = title
         self.body = body
         self.date = date

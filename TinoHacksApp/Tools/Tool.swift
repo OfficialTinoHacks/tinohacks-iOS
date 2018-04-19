@@ -9,14 +9,14 @@
 import UIKit
 
 class Tool {
-    var name: String
-    var color: UIColor
+    var image: UIImage
+    var link: URL
     
-    init?(name: String, color: UIColor) {
-        self.name = name
-        self.color = color
+    init?(image: UIImage, link: URL) {
+        self.image = image
+        self.link = link
         
-        if name.isEmpty {
+        if link.absoluteString.isEmpty {
             return nil
         }
     }

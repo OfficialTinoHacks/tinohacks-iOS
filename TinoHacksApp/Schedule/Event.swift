@@ -11,15 +11,15 @@ import UIKit
 class Event {
     var name: String = ""
     var time: String = ""
-    var day: String = ""
+    var location: String = ""
     
-    init?(name: String, time: String, day: String) {
+    init?(name: String, time: String, location: String) {
         self.name = name
         self.time = time
-        self.day = day
+        self.location = location
         
         //Returns nil if no name, time, or day is given
-        if name.isEmpty || time.isEmpty || day.isEmpty {
+        if name.isEmpty || time.isEmpty || location.isEmpty {
             return nil
         }
     }
